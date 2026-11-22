@@ -1,0 +1,1762 @@
+{
+  "schemaVersion": 2,
+  "products": [
+    {
+      "id": "ao-101",
+      "title": "Crna plisirana midi haljina na preklop",
+      "category": "Ženske haljine",
+      "description": "Bezvremenska crna midi haljina sa finim pliseom i pojasom koji naglašava struk. Idealna za svečane prilike i poslovne kombinacije.",
+      "materialNote": "95% viskoza, 5% elastin · Ne providi se · Realan kroj",
+      "salePrice": 2290,
+      "originalPrice": 5490,
+      "imageUrl": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+      "stockBySize": {
+        "S": 2,
+        "M": 3,
+        "L": 2,
+        "XL": 1
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-22T09:15:00.000Z",
+      "sku": "SKU-AO-101",
+      "slug": "crna-plisirana-midi-haljina-na-preklop-ao-101",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/dress_black_midi_1795368188456.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-101-s",
+          "sku": "SKU-AO-101-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-101-m",
+          "sku": "SKU-AO-101-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-101-l",
+          "sku": "SKU-AO-101-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-101-xl",
+          "sku": "SKU-AO-101-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-102",
+      "title": "Bordo satenska slip midi haljina",
+      "category": "Ženske haljine",
+      "description": "Luksuzna slip haljina u dubokoj bordo nijansi sa mekim padom i podesivim bretelama. Savršen izbor za večernje izlaske i proslave.",
+      "materialNote": "Teški mat saten · Prirodan sjaj · Podesive bretele",
+      "salePrice": 1990,
+      "originalPrice": 4690,
+      "imageUrl": "/src/assets/images/dress_burgundy_silk_1795368188762.jpg",
+      "stockBySize": {
+        "XS": 1,
+        "S": 2,
+        "M": 1,
+        "L": 0
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-22T08:50:00.000Z",
+      "sku": "SKU-AO-102",
+      "slug": "bordo-satenska-slip-midi-haljina-ao-102",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/dress_burgundy_silk_1795368188762.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-102-xs",
+          "sku": "SKU-AO-102-XS",
+          "color": "Osnovna",
+          "size": "XS",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-102-s",
+          "sku": "SKU-AO-102-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-102-m",
+          "sku": "SKU-AO-102-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-102-l",
+          "sku": "SKU-AO-102-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 0,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-103",
+      "title": "Bež lanena košulja-haljina sa kaišem",
+      "category": "Ženske haljine",
+      "description": "Prozračna košulja-haljina krojena od mešavine lana i pamuka sa kopčanjem po celoj dužini i dubokim džepovima.",
+      "materialNote": "55% lan, 45% pamuk · Komotan strukirani kroj",
+      "salePrice": 2490,
+      "originalPrice": 5290,
+      "imageUrl": "/src/assets/images/dress_beige_linen_1795368188720.jpg",
+      "stockBySize": {
+        "S": 3,
+        "M": 4,
+        "L": 3,
+        "XL": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-22T08:10:00.000Z",
+      "sku": "SKU-AO-103",
+      "slug": "bez-lanena-kosulja-haljina-sa-kaisem-ao-103",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/dress_beige_linen_1795368188720.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-103-s",
+          "sku": "SKU-AO-103-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-103-m",
+          "sku": "SKU-AO-103-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 4,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-103-l",
+          "sku": "SKU-AO-103-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-103-xl",
+          "sku": "SKU-AO-103-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-104",
+      "title": "Maslinasta drapirana koktel haljina",
+      "category": "Ženske haljine",
+      "description": "Sofisticirana haljina dugih rukava sa drapiranjem u predelu struka koje laska figuri. Diskretan prednji šlic za lakoću pokreta.",
+      "materialNote": "92% modal, 8% elastin · Prijatna i rastegljiva",
+      "salePrice": 2190,
+      "originalPrice": 4990,
+      "imageUrl": "/src/assets/images/dress_olive_draped_1795368189751.jpg",
+      "stockBySize": {
+        "M": 2,
+        "L": 1,
+        "XL": 2,
+        "XXL": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-21T19:40:00.000Z",
+      "sku": "SKU-AO-104",
+      "slug": "maslinasta-drapirana-koktel-haljina-ao-104",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/dress_olive_draped_1795368189751.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-104-m",
+          "sku": "SKU-AO-104-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-104-l",
+          "sku": "SKU-AO-104-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-104-xl",
+          "sku": "SKU-AO-104-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-104-xxl",
+          "sku": "SKU-AO-104-XXL",
+          "color": "Osnovna",
+          "size": "XXL",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-105",
+      "title": "Krem oversized teški pamučni duks sa kapuljačom",
+      "category": "Majice i duksevi",
+      "description": "Premijum duks od gustog organskog pamuka (420gsm) sa duplom kapuljačom i spuštenim ramenima. Zadržava formu nakon pranja.",
+      "materialNote": "100% češljani organski pamuk · Blago brušena unutrašnjost",
+      "salePrice": 1890,
+      "originalPrice": 4290,
+      "imageUrl": "/src/assets/images/top_cream_hoodie_1795368188769.jpg",
+      "stockBySize": {
+        "XS": 2,
+        "S": 4,
+        "M": 5,
+        "L": 3,
+        "XL": 2
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-21T17:20:00.000Z",
+      "sku": "SKU-AO-105",
+      "slug": "krem-oversized-teski-pamucni-duks-sa-kapuljacom-ao-105",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/top_cream_hoodie_1795368188769.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-105-xs",
+          "sku": "SKU-AO-105-XS",
+          "color": "Osnovna",
+          "size": "XS",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-105-s",
+          "sku": "SKU-AO-105-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 4,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-105-m",
+          "sku": "SKU-AO-105-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 5,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-105-l",
+          "sku": "SKU-AO-105-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-105-xl",
+          "sku": "SKU-AO-105-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-106",
+      "title": "Bordo minimalistički crewneck duks",
+      "category": "Majice i duksevi",
+      "description": "Klasičan duks bez kapuljače u bogatoj bordo boji sa ojačanim ranflama. Odlično se kombinuje uz farmerke i kapute.",
+      "materialNote": "90% pamuk, 10% poliester · Topao i mekan na dodir",
+      "salePrice": 1590,
+      "originalPrice": 3690,
+      "imageUrl": "/src/assets/images/top_burgundy_sweatshirt_1795368188462.jpg",
+      "stockBySize": {
+        "S": 1,
+        "M": 2,
+        "L": 2,
+        "XL": 0
+      },
+      "active": true,
+      "createdAt": "2026-11-21T14:15:00.000Z",
+      "sku": "SKU-AO-106",
+      "slug": "bordo-minimalisticki-crewneck-duks-ao-106",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/top_burgundy_sweatshirt_1795368188462.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-106-s",
+          "sku": "SKU-AO-106-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-106-m",
+          "sku": "SKU-AO-106-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-106-l",
+          "sku": "SKU-AO-106-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-106-xl",
+          "sku": "SKU-AO-106-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 0,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-107",
+      "title": "Antracit fini džemper od merino vune",
+      "category": "Majice i duksevi",
+      "description": "Tanak, izuzetno topao džemper čistih linija koji se lako nosi ispod sakoa ili samostalno tokom hladnijih dana.",
+      "materialNote": "80% ekstra fina merino vuna, 20% poliamid",
+      "salePrice": 2390,
+      "originalPrice": 5890,
+      "imageUrl": "/src/assets/images/top_charcoal_knit_1795368189053.jpg",
+      "stockBySize": {
+        "M": 3,
+        "L": 3,
+        "XL": 2,
+        "XXL": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-21T11:30:00.000Z",
+      "sku": "SKU-AO-107",
+      "slug": "antracit-fini-dzemper-od-merino-vune-ao-107",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/top_charcoal_knit_1795368189053.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-107-m",
+          "sku": "SKU-AO-107-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-107-l",
+          "sku": "SKU-AO-107-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-107-xl",
+          "sku": "SKU-AO-107-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-107-xxl",
+          "sku": "SKU-AO-107-XXL",
+          "color": "Osnovna",
+          "size": "XXL",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-108",
+      "title": "Indigo farmerke ravnog kroja visokog struka",
+      "category": "Pantalone i farmerke",
+      "description": "Klasik svakog garderobera — tamne indigo farmerke sa visokim strukom i blagim elastinom za maksimalnu udobnost tokom celog dana.",
+      "materialNote": "98% pamuk, 2% elastin · Prava dužina nogavica",
+      "salePrice": 2190,
+      "originalPrice": 4890,
+      "imageUrl": "/src/assets/images/jeans_indigo_straight_1795368188242.jpg",
+      "stockBySize": {
+        "XS": 2,
+        "S": 3,
+        "M": 4,
+        "L": 2,
+        "XL": 1
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-20T20:00:00.000Z",
+      "sku": "SKU-AO-108",
+      "slug": "indigo-farmerke-ravnog-kroja-visokog-struka-ao-108",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/jeans_indigo_straight_1795368188242.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-108-xs",
+          "sku": "SKU-AO-108-XS",
+          "color": "Osnovna",
+          "size": "XS",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-108-s",
+          "sku": "SKU-AO-108-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-108-m",
+          "sku": "SKU-AO-108-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 4,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-108-l",
+          "sku": "SKU-AO-108-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-108-xl",
+          "sku": "SKU-AO-108-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-109",
+      "title": "Taupe široke pantalone sa faltama",
+      "category": "Pantalone i farmerke",
+      "description": "Elegantne pantalone širokih nogavica u toploj taupe nijansi sa dubokim faltama i bočnim džepovima. Izdužuju siluetu.",
+      "materialNote": "68% poliester, 29% viskoza, 3% elastin · Ne gužvaju se",
+      "salePrice": 2290,
+      "originalPrice": 4990,
+      "imageUrl": "/src/assets/images/pants_taupe_pleated_1795368188449.jpg",
+      "stockBySize": {
+        "S": 2,
+        "M": 2,
+        "L": 1,
+        "XL": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-20T16:45:00.000Z",
+      "sku": "SKU-AO-109",
+      "slug": "taupe-siroke-pantalone-sa-faltama-ao-109",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/pants_taupe_pleated_1795368188449.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-109-s",
+          "sku": "SKU-AO-109-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-109-m",
+          "sku": "SKU-AO-109-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-109-l",
+          "sku": "SKU-AO-109-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-109-xl",
+          "sku": "SKU-AO-109-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-110",
+      "title": "Bebi rebrasto pamučno odelce + pletene nazuvke",
+      "category": "Za bebe (odelca i čarapice)",
+      "description": "Prelepo mekano odelce od rebrastog organskog pamuka sa drvenim dugmićima i parom toplih pletenih nazuvki u kompletu.",
+      "materialNote": "100% GOTS sertifikovan organski pamuk · Hipoalergeno",
+      "salePrice": 1390,
+      "originalPrice": 3190,
+      "imageUrl": "/src/assets/images/baby_oatmeal_romper_1795368188175.jpg",
+      "stockBySize": {
+        "Bebi (0-24m)": 6
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-20T12:15:00.000Z",
+      "sku": "SKU-AO-110",
+      "slug": "bebi-rebrasto-pamucno-odelce-pletene-nazuvke-ao-110",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/baby_oatmeal_romper_1795368188175.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-110-bebi024m",
+          "sku": "SKU-AO-110-BEBI024M",
+          "color": "Osnovna",
+          "size": "Bebi (0-24m)",
+          "physicalStock": 6,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-111",
+      "title": "Bebi komplet: waffle zeka + 2 para rebrastih čarapica",
+      "category": "Za bebe (odelca i čarapice)",
+      "description": "Nežno puder-roze waffle odelce u kombinaciji sa dva para mekanih čarapica koje ne stežu bebin zglob. Savršeno i za poklon za babine.",
+      "materialNote": "100% gusti češljani pamuk · Bez veštačkih boja",
+      "salePrice": 1190,
+      "originalPrice": 2690,
+      "imageUrl": "/src/assets/images/baby_rose_socks_set_1795368188471.jpg",
+      "stockBySize": {
+        "Bebi (0-24m)": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-19T18:30:00.000Z",
+      "sku": "SKU-AO-111",
+      "slug": "bebi-komplet-waffle-zeka-2-para-rebrastih-carapica-ao-111",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/baby_rose_socks_set_1795368188471.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-111-bebi024m",
+          "sku": "SKU-AO-111-BEBI024M",
+          "color": "Osnovna",
+          "size": "Bebi (0-24m)",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-112",
+      "title": "Kamel šal od čistog kašmira i kožni kaiš (Set)",
+      "category": "Ostalo",
+      "description": "Mekani šal od kašmira sa resama u kamel tonu uparen sa minimalističkim kožnim kaišem sa mat mesinganom šnalom.",
+      "materialNote": "Šal: 100% kašmir · Kaiš: 100% prirodna teleća koža",
+      "salePrice": 2590,
+      "originalPrice": 6490,
+      "imageUrl": "/src/assets/images/accessory_cashmere_scarf_1795368188838.jpg",
+      "stockBySize": {
+        "Univerzalna": 4
+      },
+      "active": true,
+      "createdAt": "2026-11-19T15:00:00.000Z",
+      "sku": "SKU-AO-112",
+      "slug": "kamel-sal-od-cistog-kasmira-i-kozni-kais-set-ao-112",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/accessory_cashmere_scarf_1795368188838.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-112-univerzalna",
+          "sku": "SKU-AO-112-UNIVERZALNA",
+          "color": "Osnovna",
+          "size": "Univerzalna",
+          "physicalStock": 4,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-113",
+      "title": "Mala crna plisirana haljina — Limitirana serija",
+      "category": "Ženske haljine",
+      "description": "Klasična silueta sa V-izrezom i finim rukavima koja se prilagođava svakoj građi. Poslednji komadi iz zimske kolekcije.",
+      "materialNote": "100% fina viskoza · Postavljena suknja",
+      "salePrice": 1790,
+      "originalPrice": 4490,
+      "imageUrl": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+      "stockBySize": {
+        "S": 1,
+        "M": 0,
+        "L": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-19T10:20:00.000Z",
+      "sku": "SKU-AO-113",
+      "slug": "mala-crna-plisirana-haljina-limitirana-serija-ao-113",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/dress_black_midi_1795368188456.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-113-s",
+          "sku": "SKU-AO-113-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-113-m",
+          "sku": "SKU-AO-113-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 0,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-113-l",
+          "sku": "SKU-AO-113-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-114",
+      "title": "Bordo sako-duks od debelog pamuka",
+      "category": "Majice i duksevi",
+      "description": "Strukturiran duks čistog okovratnika koji izgleda uredno i u smart-casual kombinacijama za posao.",
+      "materialNote": "100% pamuk 380gsm · Ne bledi pri pranju",
+      "salePrice": 1490,
+      "originalPrice": 3290,
+      "imageUrl": "/src/assets/images/top_burgundy_sweatshirt_1795368188462.jpg",
+      "stockBySize": {
+        "S": 3,
+        "M": 4,
+        "L": 3,
+        "XL": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-18T16:10:00.000Z",
+      "sku": "SKU-AO-114",
+      "slug": "bordo-sako-duks-od-debelog-pamuka-ao-114",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/top_burgundy_sweatshirt_1795368188462.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-114-s",
+          "sku": "SKU-AO-114-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-114-m",
+          "sku": "SKU-AO-114-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 4,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-114-l",
+          "sku": "SKU-AO-114-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-114-xl",
+          "sku": "SKU-AO-114-XL",
+          "color": "Osnovna",
+          "size": "XL",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-115",
+      "title": "Kamel kašmirski šal — Pojedinačna ponuda",
+      "category": "Ostalo",
+      "description": "Izuzetno topao, lagan šal u univerzalnoj kamel nijansi koji podiže svaku zimsku jaknu ili kaput.",
+      "materialNote": "100% kašmir · Dimenzije 190 x 45 cm",
+      "salePrice": 1690,
+      "originalPrice": 3990,
+      "imageUrl": "/src/assets/images/accessory_cashmere_scarf_1795368188838.jpg",
+      "stockBySize": {
+        "Univerzalna": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-18T11:00:00.000Z",
+      "sku": "SKU-AO-115",
+      "slug": "kamel-kasmirski-sal-pojedinacna-ponuda-ao-115",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/accessory_cashmere_scarf_1795368188838.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-115-univerzalna",
+          "sku": "SKU-AO-115-UNIVERZALNA",
+          "color": "Osnovna",
+          "size": "Univerzalna",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-116",
+      "title": "Pletene bebi čarapice — Paket 3 para (Organski pamuk)",
+      "category": "Za bebe (odelca i čarapice)",
+      "description": "Tri para mekanih rebrastih čarapica u neutralnim tonovima sa neklizajućom teksturom. Idealne od rođenja do 24 meseca.",
+      "materialNote": "95% organski pamuk, 5% elastin · OEKO-TEX Standard",
+      "salePrice": 690,
+      "originalPrice": 1490,
+      "imageUrl": "/src/assets/images/baby_rose_socks_set_1795368188471.jpg",
+      "stockBySize": {
+        "Bebi (0-24m)": 8
+      },
+      "active": true,
+      "createdAt": "2026-11-17T14:00:00.000Z",
+      "sku": "SKU-AO-116",
+      "slug": "pletene-bebi-carapice-paket-3-para-organski-pamuk-ao-116",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/baby_rose_socks_set_1795368188471.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-116-bebi024m",
+          "sku": "SKU-AO-116-BEBI024M",
+          "color": "Osnovna",
+          "size": "Bebi (0-24m)",
+          "physicalStock": 8,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-117",
+      "title": "Bež lanena midi haljina — Poslovni kroj",
+      "category": "Ženske haljine",
+      "description": "Udoban prirodan materijal sa kopčanjem na dugmiće od sedefa. Poslednja količina u outlet ponudi.",
+      "materialNote": "60% lan, 40% viskoza",
+      "salePrice": 2090,
+      "originalPrice": 4990,
+      "imageUrl": "/src/assets/images/dress_beige_linen_1795368188720.jpg",
+      "stockBySize": {
+        "M": 0,
+        "L": 0
+      },
+      "active": true,
+      "createdAt": "2026-11-16T09:00:00.000Z",
+      "sku": "SKU-AO-117",
+      "slug": "bez-lanena-midi-haljina-poslovni-kroj-ao-117",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/dress_beige_linen_1795368188720.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-117-m",
+          "sku": "SKU-AO-117-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 0,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-117-l",
+          "sku": "SKU-AO-117-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 0,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Rasprodat",
+      "soldCount": 0
+    },
+    {
+      "id": "ao-118",
+      "title": "Krem pamučni duks — Jesenja serija",
+      "category": "Majice i duksevi",
+      "description": "Klasičan krem duks sa dubokim kengur džepom i metalnim završecima učkura.",
+      "materialNote": "100% organski pamuk",
+      "salePrice": 1790,
+      "originalPrice": 3890,
+      "imageUrl": "/src/assets/images/top_cream_hoodie_1795368188769.jpg",
+      "stockBySize": {
+        "S": 2,
+        "M": 3,
+        "L": 2,
+        "XXL": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-15T13:30:00.000Z",
+      "sku": "SKU-AO-118",
+      "slug": "krem-pamucni-duks-jesenja-serija-ao-118",
+      "color": "Osnovna",
+      "galleryImages": [
+        "/src/assets/images/top_cream_hoodie_1795368188769.jpg"
+      ],
+      "variants": [
+        {
+          "id": "ao-118-s",
+          "sku": "SKU-AO-118-S",
+          "color": "Osnovna",
+          "size": "S",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-118-m",
+          "sku": "SKU-AO-118-M",
+          "color": "Osnovna",
+          "size": "M",
+          "physicalStock": 3,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-118-l",
+          "sku": "SKU-AO-118-L",
+          "color": "Osnovna",
+          "size": "L",
+          "physicalStock": 2,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        },
+        {
+          "id": "ao-118-xxl",
+          "sku": "SKU-AO-118-XXL",
+          "color": "Osnovna",
+          "size": "XXL",
+          "physicalStock": 1,
+          "reservedStock": 0,
+          "soldCount": 0,
+          "returnedCount": 0,
+          "damagedCount": 0
+        }
+      ],
+      "status": "Aktivan",
+      "soldCount": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "AO-2611-4821",
+      "productId": "ao-101",
+      "productTitle": "Crna plisirana midi haljina na preklop",
+      "productImage": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+      "selectedSize": "M",
+      "bundleQuantity": 2,
+      "customer": {
+        "fullName": "Jelena Marković",
+        "street": "Krunska 42, stan 6",
+        "cityZip": "Beograd 11000",
+        "phone": "064 812 3490",
+        "note": "Pozvati 15 minuta pre dolaska."
+      },
+      "pricing": {
+        "unitSalePrice": 2290,
+        "quantity": 2,
+        "baseTotal": 4580,
+        "discountPercent": 15,
+        "discountAmount": 687,
+        "subtotal": 3893,
+        "shippingCost": 450,
+        "isFreeShipping": false,
+        "total": 4343
+      },
+      "status": "Nova",
+      "createdAt": "2026-11-22T09:10:00.000Z",
+      "source": "Internet prodavnica",
+      "items": [
+        {
+          "productId": "ao-101",
+          "sku": "SKU-AO-101",
+          "title": "Crna plisirana midi haljina na preklop",
+          "imageUrl": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+          "size": "M",
+          "color": "Osnovna",
+          "quantity": 2,
+          "unitSalePrice": 2290,
+          "unitOriginalPrice": 5490,
+          "unitPurchasePrice": null,
+          "returnedQty": 0,
+          "damagedReturnedQty": 0
+        }
+      ],
+      "stockState": "deducted",
+      "statusHistory": [
+        {
+          "status": "Nova",
+          "at": "2026-11-22T09:10:00.000Z",
+          "actor": "sistem"
+        }
+      ],
+      "shipping": {
+        "courier": "Post Express",
+        "chargedToCustomer": 450,
+        "actualCost": 450,
+        "returnCost": 0
+      },
+      "cod": {
+        "expectedAmount": 4343,
+        "collectedFromCustomer": false,
+        "settledToSeller": false,
+        "courierFee": 0,
+        "receivedAmount": 0
+      }
+    },
+    {
+      "id": "AO-2611-4819",
+      "productId": "ao-110",
+      "productTitle": "Bebi rebrasto pamučno odelce + pletene nazuvke",
+      "productImage": "/src/assets/images/baby_oatmeal_romper_1795368188175.jpg",
+      "selectedSize": "Bebi (0-24m)",
+      "bundleQuantity": 3,
+      "customer": {
+        "fullName": "Sanja Vasić",
+        "street": "Bulevar oslobođenja 88",
+        "cityZip": "Novi Sad 21000",
+        "phone": "063 771 2054",
+        "note": "Veličina 3-6m ako ima na stanju."
+      },
+      "pricing": {
+        "unitSalePrice": 1390,
+        "quantity": 3,
+        "baseTotal": 4170,
+        "discountPercent": 20,
+        "discountAmount": 834,
+        "subtotal": 3336,
+        "shippingCost": 0,
+        "isFreeShipping": true,
+        "total": 3336
+      },
+      "status": "Poslata",
+      "createdAt": "2026-11-22T07:45:00.000Z",
+      "source": "Internet prodavnica",
+      "items": [
+        {
+          "productId": "ao-110",
+          "sku": "SKU-AO-110",
+          "title": "Bebi rebrasto pamučno odelce + pletene nazuvke",
+          "imageUrl": "/src/assets/images/baby_oatmeal_romper_1795368188175.jpg",
+          "size": "Bebi (0-24m)",
+          "color": "Osnovna",
+          "quantity": 3,
+          "unitSalePrice": 1390,
+          "unitOriginalPrice": 3190,
+          "unitPurchasePrice": null,
+          "returnedQty": 0,
+          "damagedReturnedQty": 0
+        }
+      ],
+      "stockState": "deducted",
+      "statusHistory": [
+        {
+          "status": "Poslata",
+          "at": "2026-11-22T07:45:00.000Z",
+          "actor": "sistem"
+        }
+      ],
+      "shipping": {
+        "courier": "Post Express",
+        "chargedToCustomer": 0,
+        "actualCost": 450,
+        "returnCost": 0
+      },
+      "cod": {
+        "expectedAmount": 3336,
+        "collectedFromCustomer": false,
+        "settledToSeller": false,
+        "courierFee": 0,
+        "receivedAmount": 0
+      }
+    },
+    {
+      "id": "AO-2611-4805",
+      "productId": "ao-108",
+      "productTitle": "Indigo farmerke ravnog kroja visokog struka",
+      "productImage": "/src/assets/images/jeans_indigo_straight_1795368188242.jpg",
+      "selectedSize": "S",
+      "bundleQuantity": 1,
+      "customer": {
+        "fullName": "Katarina Nikolić",
+        "street": "Obrenovićeva 19",
+        "cityZip": "Niš 18000",
+        "phone": "065 340 9912"
+      },
+      "pricing": {
+        "unitSalePrice": 2190,
+        "quantity": 1,
+        "baseTotal": 2190,
+        "discountPercent": 0,
+        "discountAmount": 0,
+        "subtotal": 2190,
+        "shippingCost": 450,
+        "isFreeShipping": false,
+        "total": 2640
+      },
+      "status": "Isporučena",
+      "createdAt": "2026-11-21T15:20:00.000Z",
+      "source": "Internet prodavnica",
+      "items": [
+        {
+          "productId": "ao-108",
+          "sku": "SKU-AO-108",
+          "title": "Indigo farmerke ravnog kroja visokog struka",
+          "imageUrl": "/src/assets/images/jeans_indigo_straight_1795368188242.jpg",
+          "size": "S",
+          "color": "Osnovna",
+          "quantity": 1,
+          "unitSalePrice": 2190,
+          "unitOriginalPrice": 4890,
+          "unitPurchasePrice": null,
+          "returnedQty": 0,
+          "damagedReturnedQty": 0
+        }
+      ],
+      "stockState": "deducted",
+      "statusHistory": [
+        {
+          "status": "Isporučena",
+          "at": "2026-11-21T15:20:00.000Z",
+          "actor": "sistem"
+        }
+      ],
+      "shipping": {
+        "courier": "Post Express",
+        "chargedToCustomer": 450,
+        "actualCost": 450,
+        "returnCost": 0
+      },
+      "cod": {
+        "expectedAmount": 2640,
+        "collectedFromCustomer": true,
+        "settledToSeller": true,
+        "courierFee": 0,
+        "receivedAmount": 2640
+      }
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-0648123490",
+      "fullName": "Jelena Marković",
+      "phone": "064 812 3490",
+      "normalizedPhone": "0648123490",
+      "street": "Krunska 42, stan 6",
+      "cityZip": "Beograd 11000",
+      "ordersCount": 1,
+      "deliveredCount": 0,
+      "uncollectedCount": 0,
+      "returnedCount": 0,
+      "totalSpentRsd": 4343,
+      "lastOrderAt": "2026-11-22T09:10:00.000Z",
+      "createdAt": "2026-11-22T09:10:00.000Z"
+    },
+    {
+      "id": "cust-0637712054",
+      "fullName": "Sanja Vasić",
+      "phone": "063 771 2054",
+      "normalizedPhone": "0637712054",
+      "street": "Bulevar oslobođenja 88",
+      "cityZip": "Novi Sad 21000",
+      "ordersCount": 1,
+      "deliveredCount": 0,
+      "uncollectedCount": 0,
+      "returnedCount": 0,
+      "totalSpentRsd": 3336,
+      "lastOrderAt": "2026-11-22T07:45:00.000Z",
+      "createdAt": "2026-11-22T07:45:00.000Z"
+    },
+    {
+      "id": "cust-0653409912",
+      "fullName": "Katarina Nikolić",
+      "phone": "065 340 9912",
+      "normalizedPhone": "0653409912",
+      "street": "Obrenovićeva 19",
+      "cityZip": "Niš 18000",
+      "ordersCount": 1,
+      "deliveredCount": 1,
+      "uncollectedCount": 0,
+      "returnedCount": 0,
+      "totalSpentRsd": 2640,
+      "lastOrderAt": "2026-11-21T15:20:00.000Z",
+      "createdAt": "2026-11-21T15:20:00.000Z"
+    }
+  ],
+  "stockMovements": [],
+  "priceHistory": [],
+  "expenses": [],
+  "promotions": [],
+  "coupons": [],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Jelena M.",
+      "initials": "JM",
+      "dateLabel": "pre 1 dan",
+      "comment": "Stigla haljina danas, prelepa je uživo još lepša nego na slici! 🥰 Veličina M mi je taman.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "name": "Milica K.",
+      "initials": "MK",
+      "dateLabel": "pre 2 dana",
+      "comment": "Sve pohvale, paket stigao sutradan od poručivanja. Materijal je baš prijatan, nije ona jeftina sintetika.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "name": "Jovana S.",
+      "initials": "JS",
+      "dateLabel": "pre 2 dana",
+      "comment": "Uzela sam dve haljine i duks, prezadovoljna sam. Za ove pare nigde nema ovakav kvalitet 👍",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 4,
+      "name": "Ivana P.",
+      "initials": "IP",
+      "dateLabel": "pre 3 dana",
+      "comment": "Odlična saradnja, brz dogovor i brza isporuka. Preporuka od srca ❤️",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 5,
+      "name": "Tamara D.",
+      "initials": "TD",
+      "dateLabel": "pre 4 dana",
+      "comment": "Haljinica je savršena, lepo stoji i ne providi se što mi je bilo najbitnije. Sigurno poručujem opet!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 6,
+      "name": "Maja R.",
+      "initials": "MR",
+      "dateLabel": "pre 4 dana",
+      "comment": "Sve po dogovoru, veličine su realne (nosim L i savršeno mi odgovara). Hvala puno!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 7,
+      "name": "Sanja V.",
+      "initials": "SV",
+      "dateLabel": "pre 5 dana",
+      "comment": "Poručila sam komplet za bebu i par čarapica, preslatko je sve i mekano na dodir 😍",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 8,
+      "name": "Aleksandra T.",
+      "initials": "AT",
+      "dateLabel": "pre 6 dana",
+      "comment": "Malo sam bila skeptična jer prvi put poručujem ovde ali sve je prošlo super, paket stigao za dan.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 9,
+      "name": "Katarina N.",
+      "initials": "KN",
+      "dateLabel": "pre nedelju dana",
+      "comment": "Prezadovoljna sam farmerkama, baš su udobne i imaju malo elastina. Čista desetka!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 10,
+      "name": "Marija L.",
+      "initials": "ML",
+      "dateLabel": "pre nedelju dana",
+      "comment": "Brza dostava, roba nova sa etiketom kao iz radnje. Svaka preporuka 👏",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 11,
+      "name": "Kristina B.",
+      "initials": "KB",
+      "dateLabel": "pre nedelju dana",
+      "comment": "Uzela sam crnu midi haljinu za svadbu, oduševljena sam kako stoji. Hvala vam puno!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 12,
+      "name": "Ana G.",
+      "initials": "AG",
+      "dateLabel": "pre 8 dana",
+      "comment": "Sve preporuke, ljubazni i tačni. Duks je top, baš je topao i mekan.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 13,
+      "name": "Dragana J.",
+      "initials": "DJ",
+      "dateLabel": "pre 9 dana",
+      "comment": "Stiglo sve uredno upakovano. Bebi odelca su predivna, žao mi je što nisam uzela još neko dok ima brojeva 😊",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 14,
+      "name": "Tijana Z.",
+      "initials": "TZ",
+      "dateLabel": "pre 10 dana",
+      "comment": "Odnos cene i kvaliteta fantastičan! Retko gde danas može da se nađe ovako povoljno a da valja.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 15,
+      "name": "Nevena Ć.",
+      "initials": "NĆ",
+      "dateLabel": "pre 11 dana",
+      "comment": "Hvala puno na brzoj isporuci, haljina je stigla na vreme za vikend i svi su me pitali gde sam je kupila 💕",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 16,
+      "name": "Bojana Đ.",
+      "initials": "BĐ",
+      "dateLabel": "pre 12 dana",
+      "comment": "Super su stvari, naručila sam majicu i pantalone, sve odgovara opisu sa sajta.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 17,
+      "name": "Danijela M.",
+      "initials": "DM",
+      "dateLabel": "pre 2 nedelje",
+      "comment": "Jako korektno, paket stigao brzom poštom bez ikakvih problema. Pozdrav!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 18,
+      "name": "Teodora I.",
+      "initials": "TI",
+      "dateLabel": "pre 2 nedelje",
+      "comment": "Prelepe su haljine, uzela sam sebi i sestri po jednu, obe smo oduševljene krojem 👌",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 19,
+      "name": "Nataša O.",
+      "initials": "NO",
+      "dateLabel": "pre 2 nedelje",
+      "comment": "Mekano, kvalitetno i tačno u milimetar po merama. Vidimo se u sledećoj porudžbini!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 20,
+      "name": "Sandra H.",
+      "initials": "SH",
+      "dateLabel": "pre 16 dana",
+      "comment": "Svaka čast na brzini, juče naručila danas već nosim duks 😄 Sve pohvale!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 21,
+      "name": "Milena A.",
+      "initials": "MA",
+      "dateLabel": "pre 17 dana",
+      "comment": "Uzela sam par stvari za poklon za babine, sve je novo i prelepo izgleda. Hvala još jednom!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 22,
+      "name": "Zorana F.",
+      "initials": "ZF",
+      "dateLabel": "pre 18 dana",
+      "comment": "Odličan kroj haljine, sakrije sve što treba a lepo naglasi struk. Prezadovoljna sam ❤️",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 23,
+      "name": "Snežana K.",
+      "initials": "SK",
+      "dateLabel": "pre 3 nedelje",
+      "comment": "Sve pohvale za prodavca, maksimalno korektno. Stvari su baš kao na slikama.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 24,
+      "name": "Nina P.",
+      "initials": "NP",
+      "dateLabel": "pre 3 nedelje",
+      "comment": "Naručila sam tri majice i jedne pantalone, sve mi je taman. Odlična rasprodaja!",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 25,
+      "name": "Marijana S.",
+      "initials": "MS",
+      "dateLabel": "pre 3 nedelje",
+      "comment": "Prelep materijal, prijatno iznenađena za ovu cenu. Topla preporuka svima 👍",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 26,
+      "name": "Gordana R.",
+      "initials": "GR",
+      "dateLabel": "pre 25 dana",
+      "comment": "Stigao paketić, čarapice i bodići za bebu su preslatki, pamuk je baš fin i gust.",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    },
+    {
+      "id": 27,
+      "name": "Dijana V.",
+      "initials": "DV",
+      "dateLabel": "pre mesec dana",
+      "comment": "Brzo, lako i bez greške. Haljina je pun pogodak, sigurno ću pogledati šta još ima od brojeva 😊",
+      "rating": 5,
+      "verifiedPurchase": true,
+      "status": "approved"
+    }
+  ],
+  "restockSubscriptions": [],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Ženske haljine",
+      "slug": "zenske-haljine",
+      "sortOrder": 1,
+      "visible": true
+    },
+    {
+      "id": "cat-2",
+      "name": "Majice i duksevi",
+      "slug": "majice-i-duksevi",
+      "sortOrder": 2,
+      "visible": true
+    },
+    {
+      "id": "cat-3",
+      "name": "Pantalone i farmerke",
+      "slug": "pantalone-i-farmerke",
+      "sortOrder": 3,
+      "visible": true
+    },
+    {
+      "id": "cat-4",
+      "name": "Za bebe (odelca i čarapice)",
+      "slug": "za-bebe-odelca-i-carapice",
+      "sortOrder": 4,
+      "visible": true
+    },
+    {
+      "id": "cat-5",
+      "name": "Ostalo",
+      "slug": "ostalo",
+      "sortOrder": 5,
+      "visible": true
+    }
+  ],
+  "legalPages": [
+    {
+      "slug": "o-nama",
+      "title": "O nama",
+      "content": "MODA PLUS OUTLET — Odličan stil. Još bolje cene. Moda za celu porodicu po outlet cenama. Specijalizovani smo za veliku rasprodaju novih butik zaliha u Srbiji. Svi artikli su potpuno novi, sa originalnom etiketom, pažljivo pregledani pre pakovanja i dostupni u ograničenim količinama do isteka zaliha.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "kontakt",
+      "title": "Kontakt i podrška kupcima",
+      "content": "Za sve informacije o veličinama, dostupnosti i poručivanju pozovite nas na 069 230 5074 ili nam pišite direktno na Viber (+381692305074) ili mejlom u okviru radnog vremena podrške.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "uslovi-kupovine",
+      "title": "Uslovi kupovine",
+      "content": "Poručivanje se vrši bez registracije putem sajta ili direktnog kontakta. Cene su iskazane u dinarima (RSD). Porudžbina je obavezujuća nakon potvrde i provere raspoloživosti na stanju. Trgovac zadržava pravo otkaza porudžbine u slučaju očigledne greške u ceni ili trenutnog nestanka artikla sa zaliha.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "politika-privatnosti",
+      "title": "Politika privatnosti",
+      "content": "Podatke koje ostavljate pri poručivanju (ime i prezime, adresa, grad, poštanski broj i broj telefona) koristimo isključivo radi pripreme paketa, slanja putem kurirske službe i komunikacije u vezi sa vašom porudžbinom. Podaci se ne prodaju trećim licima. Marketinški kolačići i pikseli učitavaju se samo uz vašu izričitu saglasnost.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "dostava-i-placanje",
+      "title": "Dostava i plaćanje",
+      "content": "Plaćanje se vrši isključivo pouzećem kuriru prilikom preuzimanja pošiljke u gotovini. Isporuku vrši Post Express u roku od 24 do 48 sati radnim danima na teritoriji Republike Srbije. Cena dostave iznosi 450 RSD, dok je za porudžbine od 4.000 RSD i više ili paket od 3 komada dostava besplatna.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "reklamacije",
+      "title": "Reklamacije i zamena",
+      "content": "Ukoliko artikal ima fabrički nedostatak ili je došlo do greške pri pakovanju, kupac ima pravo na reklamaciju u skladu sa Zakonom o zaštiti potrošača Republike Srbije. Pošaljite nam fotografiju i broj porudžbine putem Vibera ili e-pošte i rešićemo zamenu ili povraćaj sredstava u najkraćem roku.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "povracaj-robe",
+      "title": "Povraćaj robe i zamena veličine",
+      "content": "Zamena veličine ili povraćaj nekorišćene robe sa originalnom etiketom mogući su u roku od 14 dana od dana prijema pošiljke. Artikal ne sme biti nošen, pran niti oštećen. Troškove povraćaja pri zameni veličine snosi kupac, osim u slučaju greške prodavca.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "slug": "odustanak-od-kupovine",
+      "title": "Pravo na odustanak od kupovine",
+      "content": "Kupac koji kupuje na daljinu ima pravo da odustane od ugovora u roku od 14 dana od dana kada je roba dospela u državinu kupca, bez navođenja razloga. Izjava o odustanku može se poslati elektronskim putem na e-mail adresu podrške sa brojem porudžbine.",
+      "updatedAt": "2026-11-22T00:00:00.000Z"
+    }
+  ],
+  "settings": {
+    "brandName": "MODA PLUS OUTLET",
+    "brandSubtitle": "Odličan stil. Još bolje cene.",
+    "secondarySlogan": "Moda za celu porodicu po outlet cenama.",
+    "logoMonogram": "MP",
+    "announcementText": "✨ MODA PLUS OUTLET — Velika rasprodaja zaliha • Odličan stil. Još bolje cene. • Plaćanje pouzećem • Besplatna dostava preko 4.000 RSD",
+    "holidayBannerText": "",
+    "holidayBannerActive": false,
+    "heroTitle": "Velika rasprodaja zaliha",
+    "heroSubtitle": "Odličan stil. Još bolje cene. Moda za celu porodicu po outlet cenama — potpuno novi komadi sa originalnom etiketom u ograničenim veličinama, plaćanje pouzećem i brza Post Express dostava.",
+    "heroImageUrl": "/src/assets/images/hero_atelier_editorial_1795368188888.jpg",
+    "contactPhoneDisplay": "069 230 5074",
+    "contactViberNumber": "+381692305074",
+    "contactEmail": "podrska@modaplusoutlet.rs",
+    "instagramHandle": "",
+    "facebookPageUrl": "",
+    "dispatchHours": "Pon–Pet 09:00–17:00 • Sub 09:00–14:00",
+    "shippingCostRsd": 450,
+    "freeShippingThresholdRsd": 4000,
+    "bundle2DiscountPercent": 15,
+    "bundle3DiscountPercent": 20,
+    "giftWrapCostRsd": 250,
+    "enablePickupInPerson": true,
+    "pickupAddress": "",
+    "showSoldOutProducts": true,
+    "autoLockMinutes": 30,
+    "legalCompanyName": "",
+    "legalSeatAddress": "",
+    "legalPib": "",
+    "legalMb": "",
+    "legalBankAccount": "",
+    "metaPixelId": "",
+    "ga4MeasurementId": "",
+    "gscVerificationTag": ""
+  },
+  "adminUsers": [],
+  "idempotencyMap": {}
+}

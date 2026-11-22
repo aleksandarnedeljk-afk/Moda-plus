@@ -1,0 +1,402 @@
+{
+  "products": [
+    {
+      "id": "ao-101",
+      "title": "Crna plisirana midi haljina na preklop",
+      "category": "Ženske haljine",
+      "description": "Bezvremenska crna midi haljina sa finim pliseom i pojasom koji naglašava struk. Idealna za svečane prilike i poslovne kombinacije.",
+      "materialNote": "95% viskoza, 5% elastin · Ne providi se · Realan kroj",
+      "salePrice": 2290,
+      "originalPrice": 5490,
+      "imageUrl": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+      "stockBySize": {
+        "S": 2,
+        "M": 3,
+        "L": 2,
+        "XL": 1
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-22T09:15:00.000Z"
+    },
+    {
+      "id": "ao-102",
+      "title": "Bordo satenska slip midi haljina",
+      "category": "Ženske haljine",
+      "description": "Luksuzna slip haljina u dubokoj bordo nijansi sa mekim padom i podesivim bretelama. Savršen izbor za večernje izlaske i proslave.",
+      "materialNote": "Teški mat saten · Prirodan sjaj · Podesive bretele",
+      "salePrice": 1990,
+      "originalPrice": 4690,
+      "imageUrl": "/src/assets/images/dress_burgundy_silk_1795368188762.jpg",
+      "stockBySize": {
+        "XS": 1,
+        "S": 2,
+        "M": 1,
+        "L": 0
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-22T08:50:00.000Z"
+    },
+    {
+      "id": "ao-103",
+      "title": "Bež lanena košulja-haljina sa kaišem",
+      "category": "Ženske haljine",
+      "description": "Prozračna košulja-haljina krojena od mešavine lana i pamuka sa kopčanjem po celoj dužini i dubokim džepovima.",
+      "materialNote": "55% lan, 45% pamuk · Komotan strukirani kroj",
+      "salePrice": 2490,
+      "originalPrice": 5290,
+      "imageUrl": "/src/assets/images/dress_beige_linen_1795368188720.jpg",
+      "stockBySize": {
+        "S": 3,
+        "M": 4,
+        "L": 3,
+        "XL": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-22T08:10:00.000Z"
+    },
+    {
+      "id": "ao-104",
+      "title": "Maslinasta drapirana koktel haljina",
+      "category": "Ženske haljine",
+      "description": "Sofisticirana haljina dugih rukava sa drapiranjem u predelu struka koje laska figuri. Diskretan prednji šlic za lakoću pokreta.",
+      "materialNote": "92% modal, 8% elastin · Prijatna i rastegljiva",
+      "salePrice": 2190,
+      "originalPrice": 4990,
+      "imageUrl": "/src/assets/images/dress_olive_draped_1795368189751.jpg",
+      "stockBySize": {
+        "M": 2,
+        "L": 1,
+        "XL": 2,
+        "XXL": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-21T19:40:00.000Z"
+    },
+    {
+      "id": "ao-105",
+      "title": "Krem oversized teški pamučni duks sa kapuljačom",
+      "category": "Majice i duksevi",
+      "description": "Premijum duks od gustog organskog pamuka (420gsm) sa duplom kapuljačom i spuštenim ramenima. Zadržava formu nakon pranja.",
+      "materialNote": "100% češljani organski pamuk · Blago brušena unutrašnjost",
+      "salePrice": 1890,
+      "originalPrice": 4290,
+      "imageUrl": "/src/assets/images/top_cream_hoodie_1795368188769.jpg",
+      "stockBySize": {
+        "XS": 2,
+        "S": 4,
+        "M": 5,
+        "L": 3,
+        "XL": 2
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-21T17:20:00.000Z"
+    },
+    {
+      "id": "ao-106",
+      "title": "Bordo minimalistički crewneck duks",
+      "category": "Majice i duksevi",
+      "description": "Klasičan duks bez kapuljače u bogatoj bordo boji sa ojačanim ranflama. Odlično se kombinuje uz farmerke i kapute.",
+      "materialNote": "90% pamuk, 10% poliester · Topao i mekan na dodir",
+      "salePrice": 1590,
+      "originalPrice": 3690,
+      "imageUrl": "/src/assets/images/top_burgundy_sweatshirt_1795368188462.jpg",
+      "stockBySize": {
+        "S": 1,
+        "M": 2,
+        "L": 2,
+        "XL": 0
+      },
+      "active": true,
+      "createdAt": "2026-11-21T14:15:00.000Z"
+    },
+    {
+      "id": "ao-107",
+      "title": "Antracit fini džemper od merino vune",
+      "category": "Majice i duksevi",
+      "description": "Tanak, izuzetno topao džemper čistih linija koji se lako nosi ispod sakoa ili samostalno tokom hladnijih dana.",
+      "materialNote": "80% ekstra fina merino vuna, 20% poliamid",
+      "salePrice": 2390,
+      "originalPrice": 5890,
+      "imageUrl": "/src/assets/images/top_charcoal_knit_1795368189053.jpg",
+      "stockBySize": {
+        "M": 3,
+        "L": 3,
+        "XL": 2,
+        "XXL": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-21T11:30:00.000Z"
+    },
+    {
+      "id": "ao-108",
+      "title": "Indigo farmerke ravnog kroja visokog struka",
+      "category": "Pantalone i farmerke",
+      "description": "Klasik svakog garderobera — tamne indigo farmerke sa visokim strukom i blagim elastinom za maksimalnu udobnost tokom celog dana.",
+      "materialNote": "98% pamuk, 2% elastin · Prava dužina nogavica",
+      "salePrice": 2190,
+      "originalPrice": 4890,
+      "imageUrl": "/src/assets/images/jeans_indigo_straight_1795368188242.jpg",
+      "stockBySize": {
+        "XS": 2,
+        "S": 3,
+        "M": 4,
+        "L": 2,
+        "XL": 1
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-20T20:00:00.000Z"
+    },
+    {
+      "id": "ao-109",
+      "title": "Taupe široke pantalone sa faltama",
+      "category": "Pantalone i farmerke",
+      "description": "Elegantne pantalone širokih nogavica u toploj taupe nijansi sa dubokim faltama i bočnim džepovima. Izdužuju siluetu.",
+      "materialNote": "68% poliester, 29% viskoza, 3% elastin · Ne gužvaju se",
+      "salePrice": 2290,
+      "originalPrice": 4990,
+      "imageUrl": "/src/assets/images/pants_taupe_pleated_1795368188449.jpg",
+      "stockBySize": {
+        "S": 2,
+        "M": 2,
+        "L": 1,
+        "XL": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-20T16:45:00.000Z"
+    },
+    {
+      "id": "ao-110",
+      "title": "Bebi rebrasto pamučno odelce + pletene nazuvke",
+      "category": "Za bebe (odelca i čarapice)",
+      "description": "Prelepo mekano odelce od rebrastog organskog pamuka sa drvenim dugmićima i parom toplih pletenih nazuvki u kompletu.",
+      "materialNote": "100% GOTS sertifikovan organski pamuk · Hipoalergeno",
+      "salePrice": 1390,
+      "originalPrice": 3190,
+      "imageUrl": "/src/assets/images/baby_oatmeal_romper_1795368188175.jpg",
+      "stockBySize": {
+        "Bebi (0-24m)": 6
+      },
+      "isNew": true,
+      "active": true,
+      "createdAt": "2026-11-20T12:15:00.000Z"
+    },
+    {
+      "id": "ao-111",
+      "title": "Bebi komplet: waffle zeka + 2 para rebrastih čarapica",
+      "category": "Za bebe (odelca i čarapice)",
+      "description": "Nežno puder-roze waffle odelce u kombinaciji sa dva para mekanih čarapica koje ne stežu bebin zglob. Savršeno i za poklon za babine.",
+      "materialNote": "100% gusti češljani pamuk · Bez veštačkih boja",
+      "salePrice": 1190,
+      "originalPrice": 2690,
+      "imageUrl": "/src/assets/images/baby_rose_socks_set_1795368188471.jpg",
+      "stockBySize": {
+        "Bebi (0-24m)": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-19T18:30:00.000Z"
+    },
+    {
+      "id": "ao-112",
+      "title": "Kamel šal od čistog kašmira i kožni kaiš (Set)",
+      "category": "Ostalo",
+      "description": "Mekani šal od kašmira sa resama u kamel tonu uparen sa minimalističkim kožnim kaišem sa mat mesinganom šnalom.",
+      "materialNote": "Šal: 100% kašmir · Kaiš: 100% prirodna teleća koža",
+      "salePrice": 2590,
+      "originalPrice": 6490,
+      "imageUrl": "/src/assets/images/accessory_cashmere_scarf_1795368188838.jpg",
+      "stockBySize": {
+        "Univerzalna": 4
+      },
+      "active": true,
+      "createdAt": "2026-11-19T15:00:00.000Z"
+    },
+    {
+      "id": "ao-113",
+      "title": "Mala crna plisirana haljina — Limitirana serija",
+      "category": "Ženske haljine",
+      "description": "Klasična silueta sa V-izrezom i finim rukavima koja se prilagođava svakoj građi. Poslednji komadi iz zimske kolekcije.",
+      "materialNote": "100% fina viskoza · Postavljena suknja",
+      "salePrice": 1790,
+      "originalPrice": 4490,
+      "imageUrl": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+      "stockBySize": {
+        "S": 1,
+        "M": 0,
+        "L": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-19T10:20:00.000Z"
+    },
+    {
+      "id": "ao-114",
+      "title": "Bordo sako-duks od debelog pamuka",
+      "category": "Majice i duksevi",
+      "description": "Strukturiran duks čistog okovratnika koji izgleda uredno i u smart-casual kombinacijama za posao.",
+      "materialNote": "100% pamuk 380gsm · Ne bledi pri pranju",
+      "salePrice": 1490,
+      "originalPrice": 3290,
+      "imageUrl": "/src/assets/images/top_burgundy_sweatshirt_1795368188462.jpg",
+      "stockBySize": {
+        "S": 3,
+        "M": 4,
+        "L": 3,
+        "XL": 2
+      },
+      "active": true,
+      "createdAt": "2026-11-18T16:10:00.000Z"
+    },
+    {
+      "id": "ao-115",
+      "title": "Kamel kašmirski šal — Pojedinačna ponuda",
+      "category": "Ostalo",
+      "description": "Izuzetno topao, lagan šal u univerzalnoj kamel nijansi koji podiže svaku zimsku jaknu ili kaput.",
+      "materialNote": "100% kašmir · Dimenzije 190 x 45 cm",
+      "salePrice": 1690,
+      "originalPrice": 3990,
+      "imageUrl": "/src/assets/images/accessory_cashmere_scarf_1795368188838.jpg",
+      "stockBySize": {
+        "Univerzalna": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-18T11:00:00.000Z"
+    },
+    {
+      "id": "ao-116",
+      "title": "Pletene bebi čarapice — Paket 3 para (Organski pamuk)",
+      "category": "Za bebe (odelca i čarapice)",
+      "description": "Tri para mekanih rebrastih čarapica u neutralnim tonovima sa neklizajućom teksturom. Idealne od rođenja do 24 meseca.",
+      "materialNote": "95% organski pamuk, 5% elastin · OEKO-TEX Standard",
+      "salePrice": 690,
+      "originalPrice": 1490,
+      "imageUrl": "/src/assets/images/baby_rose_socks_set_1795368188471.jpg",
+      "stockBySize": {
+        "Bebi (0-24m)": 8
+      },
+      "active": true,
+      "createdAt": "2026-11-17T14:00:00.000Z"
+    },
+    {
+      "id": "ao-117",
+      "title": "Bež lanena midi haljina — Poslovni kroj",
+      "category": "Ženske haljine",
+      "description": "Udoban prirodan materijal sa kopčanjem na dugmiće od sedefa. Poslednja količina u outlet ponudi.",
+      "materialNote": "60% lan, 40% viskoza",
+      "salePrice": 2090,
+      "originalPrice": 4990,
+      "imageUrl": "/src/assets/images/dress_beige_linen_1795368188720.jpg",
+      "stockBySize": {
+        "M": 0,
+        "L": 0
+      },
+      "active": true,
+      "createdAt": "2026-11-16T09:00:00.000Z"
+    },
+    {
+      "id": "ao-118",
+      "title": "Krem pamučni duks — Jesenja serija",
+      "category": "Majice i duksevi",
+      "description": "Klasičan krem duks sa dubokim kengur džepom i metalnim završecima učkura.",
+      "materialNote": "100% organski pamuk",
+      "salePrice": 1790,
+      "originalPrice": 3890,
+      "imageUrl": "/src/assets/images/top_cream_hoodie_1795368188769.jpg",
+      "stockBySize": {
+        "S": 2,
+        "M": 3,
+        "L": 2,
+        "XXL": 1
+      },
+      "active": true,
+      "createdAt": "2026-11-15T13:30:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "AO-2611-4821",
+      "productId": "ao-101",
+      "productTitle": "Crna plisirana midi haljina na preklop",
+      "productImage": "/src/assets/images/dress_black_midi_1795368188456.jpg",
+      "selectedSize": "M",
+      "bundleQuantity": 2,
+      "customer": {
+        "fullName": "Jelena Marković",
+        "street": "Krunska 42, stan 6",
+        "cityZip": "Beograd 11000",
+        "phone": "064 812 3490",
+        "note": "Pozvati 15 minuta pre dolaska."
+      },
+      "pricing": {
+        "unitSalePrice": 2290,
+        "quantity": 2,
+        "baseTotal": 4580,
+        "discountPercent": 15,
+        "discountAmount": 687,
+        "subtotal": 3893,
+        "shippingCost": 450,
+        "isFreeShipping": false,
+        "total": 4343
+      },
+      "status": "Nova",
+      "createdAt": "2026-11-22T09:10:00.000Z"
+    },
+    {
+      "id": "AO-2611-4819",
+      "productId": "ao-110",
+      "productTitle": "Bebi rebrasto pamučno odelce + pletene nazuvke",
+      "productImage": "/src/assets/images/baby_oatmeal_romper_1795368188175.jpg",
+      "selectedSize": "Bebi (0-24m)",
+      "bundleQuantity": 3,
+      "customer": {
+        "fullName": "Sanja Vasić",
+        "street": "Bulevar oslobođenja 88",
+        "cityZip": "Novi Sad 21000",
+        "phone": "063 771 2054",
+        "note": "Veličina 3-6m ako ima na stanju."
+      },
+      "pricing": {
+        "unitSalePrice": 1390,
+        "quantity": 3,
+        "baseTotal": 4170,
+        "discountPercent": 20,
+        "discountAmount": 834,
+        "subtotal": 3336,
+        "shippingCost": 0,
+        "isFreeShipping": true,
+        "total": 3336
+      },
+      "status": "Poslato",
+      "createdAt": "2026-11-22T07:45:00.000Z"
+    },
+    {
+      "id": "AO-2611-4805",
+      "productId": "ao-108",
+      "productTitle": "Indigo farmerke ravnog kroja visokog struka",
+      "productImage": "/src/assets/images/jeans_indigo_straight_1795368188242.jpg",
+      "selectedSize": "S",
+      "bundleQuantity": 1,
+      "customer": {
+        "fullName": "Katarina Nikolić",
+        "street": "Obrenovićeva 19",
+        "cityZip": "Niš 18000",
+        "phone": "065 340 9912"
+      },
+      "pricing": {
+        "unitSalePrice": 2190,
+        "quantity": 1,
+        "baseTotal": 2190,
+        "discountPercent": 0,
+        "discountAmount": 0,
+        "subtotal": 2190,
+        "shippingCost": 450,
+        "isFreeShipping": false,
+        "total": 2640
+      },
+      "status": "Isporučeno",
+      "createdAt": "2026-11-21T15:20:00.000Z"
+    }
+  ]
+}

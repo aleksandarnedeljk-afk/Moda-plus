@@ -1,0 +1,1445 @@
+# MODA PLUS OUTLET — KOMPLETAN PROFESIONALNI LIVE CHAT I KONTAKT CENTAR
+
+## ULOGA I CILJ
+
+Ponašaj se istovremeno kao:
+
+- Senior Full-Stack Developer
+- Software Architect
+- Senior UX/UI Designer
+- E-commerce Product Designer
+- Database Architect
+- Cybersecurity Engineer
+- QA Automation Engineer
+- Mobile UX Specialist
+- Customer Support Systems Architect
+- Performance Engineer
+
+Tvoj zadatak je da nadogradiš postojeću internet prodavnicu **MODA PLUS OUTLET** kompletnim profesionalnim komunikacionim sistemom.
+
+Želim da kupci mogu na dva nezavisna načina da komuniciraju sa prodavnicom:
+
+**A. LIVE CHAT** — direktan razgovor sa prodavcem na sajtu, sa tekstualnim porukama, fotografijama, odgovorima u realnom vremenu i istorijom komunikacije.
+
+**B. KONTAKT FORMA** — strukturirano slanje pitanja, zahteva, fotografija, reklamacija i drugih upita, uz praćenje statusa i odgovor administratora.
+
+Oba kanala moraju biti povezana sa jedinstvenim administrativnim centrom za poruke, ali moraju ostati jasno razdvojena po korisničkom iskustvu, nameni, statusima i pravilima obrade.
+
+Ovo mora biti potpuno funkcionalan produkcijski sistem, ne statična demonstracija.
+
+---
+
+# 1. OSNOVNA PRAVILA
+
+Postojeća prodavnica već poseduje:
+
+- Mobilno optimizovan dizajn.
+- Katalog artikala.
+- Kategorije.
+- Filtere.
+- Zalihe po veličinama.
+- Brzu porudžbinu.
+- Paket popuste.
+- Dostavu.
+- Poručivanje pouzećem.
+- Admin panel.
+- Viber integraciju.
+- Serversku persistenciju podataka.
+
+Sve navedeno mora ostati očuvano.
+
+NE SMEŠ:
+
+- Praviti novu prodavnicu od nule.
+- Brisati postojeće podatke.
+- Menjati ispravnu poslovnu logiku.
+- Ukloniti postojeće Viber funkcije.
+- Ukloniti administraciju.
+- Narušiti mobilni prikaz.
+- Dodavati nepotrebne plaćene servise.
+- Pravljenje vizuelnih funkcionalnosti predstavljati kao završenu implementaciju.
+- Izmišljati rezultate testova.
+- Uvoditi AI chatbot kao zamenu za stvarnog prodavca.
+
+Pre početka proveri postojeći kod, strukturu baze, način prijave administratora i mogućnosti hostinga.
+
+Napravi bezbednu migraciju i rezervnu kopiju ako su dostupni odgovarajući mehanizmi.
+
+Koristi postojeći dizajn sistem, fontove, boje i komponente.
+
+Svi korisnički tekstovi moraju biti na srpskom jeziku, latinicom.
+
+Vremenska zona: Europe/Belgrade.
+
+Zvanični kontakt:
+
+Telefon: 069 230 5074  
+Viber: 069 230 5074  
+Međunarodni format: +381692305074
+
+Kontakt broj mora biti promenljiv iz admin podešavanja.
+
+---
+
+# 2. KOMPLETNA ARHITEKTURA KOMUNIKACIONOG CENTRA
+
+Implementiraj sledeće module.
+
+### Javni deo
+
+1. Plutajuće Live Chat dugme.
+2. Live Chat prozor.
+3. Posebna stranica /kontakt.
+4. Napredna kontakt forma.
+5. Forma „Pošaljite nam fotografiju garderobe“.
+6. Stranica za bezbedan pregled poslatog upita.
+7. Privatna stranica za nastavak razgovora.
+8. Dugme „Pitajte za ovaj artikal“.
+9. Dugme „Pitanje o porudžbini“.
+10. Viber i telefonski kontakt kao dodatne opcije.
+
+### Administrativni deo
+
+1. Komunikacioni centar.
+2. Live Chat razgovori.
+3. Kontakt upiti.
+4. Fotografije kupaca.
+5. Nepročitane poruke.
+6. Poruke koje čekaju odgovor.
+7. Dodeljeni razgovori.
+8. Istorija komunikacije.
+9. Brzi odgovori.
+10. Statistika komunikacije.
+11. Podešavanja dostupnosti.
+12. Upravljanje obaveštenjima.
+13. Spam i blokirane sesije.
+14. Povezivanje sa kataloškim artiklima.
+15. Povezivanje sa porudžbinama.
+16. Bezbedno arhiviranje i brisanje.
+
+Live Chat i kontakt upiti moraju imati zajedničku administrativnu početnu stranicu, ali različite tabove, oblike prikaza i radne tokove.
+
+---
+
+# 3. LIVE CHAT DUGME NA SVAKOJ STRANICI
+
+Dodaj plutajuće dugme u donjem desnom uglu svih javnih stranica.
+
+Dugme mora biti elegantno i usklađeno sa luksuznim dizajnom prodavnice.
+
+Preporučeni stil:
+
+- Okruglo dugme.
+- Tamna pozadina #121212.
+- Diskretni zlatni detalj #C5A059.
+- Bela ikonica za razgovor.
+- Minimalistička animacija pri pojavljivanju.
+- Diskretan brojač nepročitanih poruka.
+- Bez agresivnog pulsiranja.
+
+Tekst uz dugme, kada ima prostora:
+
+„Pitajte nas“
+
+Na malim ekranima koristi samo ikonicu ako bi tekst zaklanjao sadržaj.
+
+Ne sme prekrivati:
+
+- Dugme za korpu.
+- Donju navigaciju.
+- Dugme za naručivanje.
+- Filtere.
+- Cookie banner.
+- Ostale važne elemente.
+
+Podrži safe-area insets na telefonima.
+
+Omogući administratoru da sakrije dugme na pojedinim stranicama.
+
+---
+
+# 4. LIVE CHAT PROZOR — DIZAJN
+
+Na desktop računaru:
+
+- Elegantni floating chat panel.
+- Približna širina 360–420 px.
+- Prilagodljiva visina.
+- Zaobljeni uglovi.
+- Suptilna senka.
+- Zaglavlje sa logotipom prodavnice.
+- Naziv prodavnice.
+- Status podrške.
+- Dugme za minimiziranje.
+- Dugme za zatvaranje.
+- Prostor za poruke.
+- Polje za unos teksta.
+- Dugme za slanje.
+- Dugme za dodavanje fotografije.
+- Dugme za fotografisanje.
+
+Na mobilnom telefonu:
+
+- Koristi namenski bottom sheet ili prikaz gotovo preko celog ekrana.
+- Zaglavlje mora ostati vidljivo.
+- Polje za poruke mora ostati iznad mobilne tastature.
+- Podrži povratak nazad bez gubitka poruke.
+- Spreči neželjeno skrolovanje pozadine.
+- Poštuj safe-area prostor.
+- Omogući jednostavno zatvaranje.
+- Čuvaj nedovršenu poruku pri slučajnom zatvaranju.
+
+Ne koristi nepotrebne animacije koje usporavaju rad.
+
+---
+
+# 5. UVODNI EKRAN LIVE CHATA
+
+Prilikom prvog otvaranja prikaži:
+
+**MODA PLUS OUTLET**
+
+„Zdravo! Dobro došli u našu prodavnicu. Kako možemo da vam pomognemo?“
+
+Brze opcije:
+
+- Imam pitanje o artiklu.
+- Tražim određenu garderobu.
+- Želim da pošaljem fotografiju.
+- Pitanje o porudžbini.
+- Dostava i zamena.
+- Napiši poruku.
+
+Kupac može odmah početi razgovor bez registracije.
+
+Ne prikazuj dug formular pre početka chata.
+
+Ime i kontakt podaci mogu se zatražiti kasnije ako su potrebni za nastavak razgovora ili realizaciju porudžbine.
+
+---
+
+# 6. FUNKCIONALNOSTI LIVE CHATA
+
+Podrži:
+
+- Slanje tekstualnih poruka.
+- Prijem tekstualnih poruka.
+- Prikaz vremena slanja.
+- Ispravan redosled poruka.
+- Real-time ažuriranje ako infrastruktura podržava.
+- Pouzdano periodično ažuriranje kao alternativu.
+- Automatsko ponovno povezivanje.
+- Čuvanje istorije.
+- Brojač nepročitanih poruka.
+- Status slanja.
+- Status neuspelog slanja.
+- Ponovno slanje neuspele poruke.
+- Status pročitane poruke kada je stvarno potvrđen.
+- Indikator kucanja kada postoji stvarna aktivnost.
+- Automatsko skrolovanje na novu poruku, osim kada korisnik čita starije poruke.
+- Prikaz datuma između grupa poruka.
+- Kopiranje teksta poruke.
+- Otvaranje linkova.
+- Pregled fotografija.
+- Pregled kataloških artikala poslatih u razgovoru.
+
+Nema potrebe za audio i video pozivima unutar aplikacije.
+
+Ako se korisnik udalji sa sajta, razgovor ostaje sačuvan u skladu sa pravilima čuvanja podataka.
+
+---
+
+# 7. FOTOGRAFIJE UNUTAR LIVE CHATA
+
+Kupac mora moći da pošalje fotografiju garderobe koju želi da kupi.
+
+Podrži:
+
+- JPG.
+- JPEG.
+- PNG.
+- WEBP.
+- HEIC kada je pouzdano podržan.
+
+Omogući:
+
+- Izbor iz galerije.
+- Fotografisanje kamerom telefona.
+- Izbor više fotografija.
+- Pregled pre slanja.
+- Uklanjanje izabranih fotografija.
+- Prikaz napretka učitavanja.
+- Obaveštenje kada slanje ne uspe.
+- Ponovni pokušaj.
+
+Podrazumevano dozvoli najviše pet fotografija po poruci.
+
+Maksimalnu dozvoljenu veličinu definiši prema infrastrukturi i podesi u konfiguraciji.
+
+Primeni optimizaciju i po potrebi konverziju podržanih fotografija.
+
+Ukloni nepotrebne EXIF metapodatke, uključujući lokaciju.
+
+Fotografije ne smeju biti javno dostupne preko predvidivih URL adresa.
+
+Pristup mora biti autorizovan.
+
+Proveravaj stvarni sadržaj fajla na serveru, a ne samo njegovu ekstenziju.
+
+Onemogući SVG, HTML, izvršne fajlove i druge nebezbedne formate.
+
+---
+
+# 8. SLANJE ARTIKALA IZ KATALOGA U CHAT
+
+Kada kupac pita za određeni proizvod, administrator treba da može poslati stvarni artikal iz kataloga.
+
+U admin chatu dodaj dugme:
+
+„Pošalji artikal“
+
+Otvara se pretraga stvarnih artikala.
+
+Kartica artikla u razgovoru prikazuje:
+
+- Fotografiju.
+- Naziv.
+- Šifru.
+- Cenu.
+- Dostupne varijante.
+- Trenutnu dostupnost.
+- Direktan link.
+- Dugme „Pogledaj artikal“.
+
+Dostupnost i cena moraju se ponovo proveriti kada kupac pokuša kupovinu.
+
+Ne zaključavaj cenu ili rezerviši robu samo zato što je kartica poslata u razgovoru.
+
+Administrator može poslati nekoliko artikala u jednoj poruci.
+
+---
+
+# 9. LIVE CHAT SA KONKRETNOG ARTIKLA
+
+Na svakoj stranici artikla dodaj dugme:
+
+„Pitajte za ovaj artikal“
+
+Kada kupac klikne, automatski se otvara chat.
+
+Uz prvu poruku prikaži povezanu karticu artikla.
+
+Primer:
+
+„Zdravo, interesuje me ovaj artikal.“
+
+Prikaži administratoru:
+
+- SKU artikla.
+- Naziv.
+- Fotografiju.
+- Trenutnu cenu.
+- Dostupne veličine.
+
+Ne oslanjaj se na slobodan tekst naziva proizvoda.
+
+Koristi jedinstveni ID artikla.
+
+---
+
+# 10. POSEBNA STRANICA /KONTAKT
+
+Pored Live Chata implementiraj profesionalnu kontakt stranicu.
+
+Stranica treba da bude dostupna iz:
+
+- Glavnog menija.
+- Futera.
+- Mobilnog menija.
+- Stranica artikala.
+- Stranice porudžbine.
+- FAQ sekcije.
+
+Glavni naslov:
+
+**Kontaktirajte nas**
+
+Podnaslov:
+
+„Imate pitanje o proizvodu, veličini ili porudžbini? Pišite nam, pošaljite fotografiju ili započnite razgovor uživo.“
+
+Na desktopu koristi dva jasno odvojena dela:
+
+LEVA STRANA:
+
+Kontakt informacije i brze opcije komunikacije.
+
+DESNA STRANA:
+
+Kontakt forma.
+
+Na mobilnom prikaži kontakt informacije iznad forme ili kao kompaktne kartice.
+
+Obavezno dodaj:
+
+- Dugme „Započni Live Chat“.
+- Dugme „Pozovi nas“.
+- Dugme „Kontaktiraj preko Vibera“.
+- Kontakt formu.
+- Informacije o radnom vremenu, ako su unete.
+
+Telefon:
+
+069 230 5074
+
+Viber:
+
+069 230 5074
+
+Međunarodni format:
+
++381692305074
+
+Ne izmišljaj email, adresu, radno vreme ili pravne podatke.
+
+Ako nisu podešeni, ne prikazuj lažne informacije.
+
+---
+
+# 11. KONTAKT FORMA — KOMPLETNA POLJA
+
+Kontakt forma mora biti odvojena od Live Chata i pogodna za strukturirane upite.
+
+Polja:
+
+1. Ime i prezime — obavezno.
+2. Telefon — obavezno ili email, prema izabranom načinu kontakta.
+3. Email — opciono kada je dostupan drugi kanal za odgovor.
+4. Tema upita — obavezno.
+5. Tekst poruke — obavezno.
+6. Fotografije — opciono.
+7. Broj porudžbine — uslovno, za pitanja o porudžbini.
+8. Veličina — opciono.
+9. Boja — opciono.
+10. Budžet — opciono.
+11. Željeni način odgovora.
+12. Potvrda upoznavanja sa politikom privatnosti.
+
+Ne prikupljaj sve podatke ako nisu potrebni.
+
+Koristi pametno prikazivanje dodatnih polja.
+
+Telefon i email validiraj na klijentu i serveru.
+
+Prikaži jasne, razumljive poruke o grešci.
+
+Sačuvaj uneseni tekst ako slanje ne uspe.
+
+Kupac ne sme morati ponovo sve da popunjava zbog prolazne mrežne greške.
+
+---
+
+# 12. KATEGORIJE KONTAKT UPITA
+
+Dodaj sledeće opcije:
+
+- Pitanje o artiklu.
+- Pitanje o veličini.
+- Pitanje o dostupnosti.
+- Tražim određenu garderobu.
+- Želim da pošaljem fotografiju.
+- Pitanje o porudžbini.
+- Dostava i rokovi.
+- Zamena artikla.
+- Povraćaj robe.
+- Reklamacija.
+- Saradnja.
+- Ostalo.
+
+Za pitanja o porudžbini ponudi polje za šifru porudžbine.
+
+Za traženje garderobe ponudi dodatna polja veličina, boja i okvirni budžet.
+
+Za reklamacije dozvoli fotografije artikla i opis problema.
+
+Ne otkrivaj podatke o porudžbini samo na osnovu unete šifre bez odgovarajuće autorizacije.
+
+---
+
+# 13. POSEBNA FORMA „TRAŽIM OVAKVU GARDEROBU“
+
+Dodaj istaknutu opciju na kontakt stranici i po potrebi na početnoj strani.
+
+Naziv:
+
+**Tražite nešto posebno?**
+
+Tekst:
+
+„Pošaljite nam fotografiju garderobe koju želite. Proverićemo da li imamo isti ili sličan model.“
+
+Dugme:
+
+„Pošaljite fotografiju“
+
+Kupac unosi:
+
+- Fotografije.
+- Vrstu garderobe.
+- Željenu veličinu.
+- Željenu boju.
+- Okvirni budžet.
+- Dodatnu napomenu.
+- Kontakt za odgovor.
+
+Administrator dobija jasno označen upit:
+
+„Potraga za artiklom“
+
+U admin panelu može:
+
+- Pregledati slike.
+- Pretražiti katalog.
+- Pronaći dostupne artikle.
+- Poslati kupcu predlog.
+- Nastaviti razgovor.
+- Označiti zahtev kao rešen.
+
+Ne obećavaj kupcu da će identičan model biti pronađen.
+
+---
+
+# 14. POTVRDA SLANJA KONTAKT FORME
+
+Nakon uspešnog slanja prikaži poseban ekran potvrde.
+
+Naslov:
+
+„Vaša poruka je uspešno poslata!“
+
+Tekst:
+
+„Hvala što ste nas kontaktirali. Odgovorićemo vam čim budemo u mogućnosti.“
+
+Prikaži:
+
+- Jedinstvenu šifru upita.
+- Datum slanja.
+- Izabranu temu.
+- Način na koji kupac može očekivati odgovor.
+- Bezbedan link za praćenje upita, ako je implementiran.
+
+Dugmad:
+
+- „Pogledajte svoj upit“.
+- „Nastavite kupovinu“.
+- „Otvorite Live Chat“.
+
+Potvrdu prikazuj tek kada server potvrdi uspešno čuvanje upita i fotografija.
+
+Spreči dvostruko slanje forme.
+
+---
+
+# 15. PRAĆENJE KONTAKT UPITA
+
+Svaki kontakt upit dobija:
+
+- Interni jedinstveni ID.
+- Javnu šifru.
+- Bezbedan pristupni token.
+- Datum i vreme.
+- Kategoriju.
+- Status.
+- Istoriju komunikacije.
+
+Statusi:
+
+- Novo.
+- U obradi.
+- Čeka odgovor kupca.
+- Odgovoreno.
+- Rešeno.
+- Arhivirano.
+
+Omogući nastavak komunikacije preko privatnog linka.
+
+Kupac može videti odgovor administratora i poslati dodatno pitanje ili fotografiju.
+
+Javna šifra ne sme sama po sebi omogućiti pristup privatnom sadržaju.
+
+Ne otkrivaj tuđe kontakt podatke.
+
+Ako korisnik izgubi privatni link, oporavak pristupa treba da zahteva odgovarajuću verifikaciju.
+
+---
+
+# 16. CENTRALNI ADMIN KOMUNIKACIONI CENTAR
+
+U postojeći admin panel dodaj novi glavni modul:
+
+**Komunikacija**
+
+Unutar njega implementiraj tabove:
+
+- Sve.
+- Live Chat.
+- Kontakt upiti.
+- Nepročitano.
+- Čeka odgovor.
+- Arhiva.
+
+Na glavnom admin dashboardu prikaži:
+
+- Nove chat poruke.
+- Nove kontakt upite.
+- Broj nepročitanih razgovora.
+- Broj otvorenih zahteva.
+- Broj zahteva koji čekaju odgovor.
+
+Neprihvatljivo je da administrator mora ručno da pretražuje više stranica da bi saznao da mu je kupac pisao.
+
+---
+
+# 17. ADMIN INBOX — PROFESIONALNI DIZAJN
+
+Na desktopu implementiraj raspored sa tri kolone:
+
+LEVO:
+Lista razgovora i upita.
+
+SREDINA:
+Aktivni razgovor ili sadržaj upita.
+
+DESNO:
+Detalji kupca, povezani artikli, porudžbine i interne napomene.
+
+Na mobilnom koristi tri povezana ekrana:
+
+1. Lista razgovora.
+2. Otvoreni razgovor.
+3. Detalji kupca i upita.
+
+Ne pokušavaj da tri desktop kolone uguraš na mobilni ekran.
+
+Lista poruka treba da sadrži:
+
+- Ime ili oznaku kupca.
+- Poslednju poruku.
+- Vreme.
+- Broj nepročitanih poruka.
+- Kanal komunikacije.
+- Status.
+- Oznaku fotografije, ako postoji.
+
+Pored svakog upita jasno prikaži oznaku:
+
+CHAT ili KONTAKT FORMA.
+
+Koristi diskretne boje za statuse.
+
+Omogući brzu pretragu po imenu, telefonu, šifri upita, sadržaju i povezanom artiklu, uz zaštitu podataka.
+
+---
+
+# 18. ODGOVARANJE NA PORUKE IZ ADMIN PANELA
+
+Administrator treba da može:
+
+- Odgovori tekstom.
+- Pošalje fotografiju.
+- Pošalje više fotografija.
+- Pošalje artikal iz kataloga.
+- Pošalje link ka proizvodu.
+- Pošalje pripremljeni odgovor.
+- Promeni status.
+- Doda internu napomenu.
+- Dodeli razgovor drugom administratoru.
+- Arhivira razgovor.
+- Označi spam.
+
+Unutrašnje napomene nikada ne smeju biti vidljive kupcu.
+
+Prikaz poruka mora jasno razlikovati poruke kupca i administratora.
+
+Ne dozvoli slanje duplih odgovora zbog ponovljenog klika ili nestabilne internet veze.
+
+---
+
+# 19. BRZI ODGOVORI I ŠABLONI
+
+Dodaj uređive šablone:
+
+1. „Poštovani, artikal je trenutno dostupan.“
+2. „Koja veličina vas interesuje?“
+3. „Tražena veličina trenutno nije dostupna.“
+4. „Imamo nekoliko sličnih modela.“
+5. „Poslaćemo vam fotografije dostupnih artikala.“
+6. „Dostava se vrši Post Express službom.“
+7. „Plaćanje je moguće pouzećem.“
+8. „Molimo vas da potvrdite adresu.“
+9. „Vaša porudžbina je potvrđena.“
+10. „Hvala što ste nas kontaktirali!“
+
+Administrator treba da može da kreira nove šablone, menja postojeće i briše ih.
+
+Šabloni moraju biti samo pomoć pri pisanju, a ne automatski lažni odgovori.
+
+---
+
+# 20. ONLINE I OFFLINE STATUS
+
+Implementiraj realan status dostupnosti.
+
+Statusi administratora:
+
+- Dostupan.
+- Zauzet.
+- Odsutan.
+- Van radnog vremena.
+
+Nemoj tvrditi da je neko online samo zato što je otvorio admin panel ranije tog dana.
+
+Ako koristiš automatsku detekciju aktivnosti, predvidi istecanje statusa nakon gubitka konekcije.
+
+Administrator mora moći ručno da izabere status.
+
+Ako nije dostupan, chat ostaje otvoren za poruke.
+
+Prikaži:
+
+„Trenutno nismo dostupni za razgovor uživo. Ostavite nam poruku i odgovorićemo čim budemo u mogućnosti.“
+
+Ne prikazuj izmišljeno vreme čekanja.
+
+---
+
+# 21. NOTIFIKACIJE ADMINISTRATORU
+
+Nove poruke ne smeju ostati neprimećene.
+
+Implementiraj:
+
+- Brojač nepročitanih poruka.
+- Obaveštenje u admin panelu.
+- Opcioni zvučni signal.
+- Desktop browser obaveštenja.
+- Mobilna Web Push obaveštenja kada platforma podržava.
+- Podešavanje zvuka i notifikacija.
+- Grupisanje više poruka iz istog razgovora.
+- Sprečavanje nepotrebnih duplikata.
+
+Za Web Push koristi bezbedno čuvanje pretplata i odgovarajuću serversku isporuku.
+
+Objasni ograničenja Androida, iOS-a i browsera.
+
+Na iOS uređajima određene push mogućnosti mogu zahtevati instaliranje sajta na početni ekran i odgovarajuću podršku sistema.
+
+Ako Web Push nije dostupan, obezbedi pouzdan prikaz novih poruka kada je admin panel otvoren.
+
+Ne prikazuj push kao funkcionalan dok nije testiran na stvarnom podržanom uređaju.
+
+---
+
+# 22. OBAVEŠTENJA KUPCU
+
+Ako kupac ostavi email adresu, omogući opciono obaveštenje kada administrator odgovori.
+
+Ako kupac ostavi telefon, ne šalji automatski SMS bez stvarne integracije i odgovarajuće dozvole.
+
+Kupcu u chatu prikaži nove odgovore.
+
+Ako se ponovo vrati na sajt sa sačuvanom sesijom, prikaži broj nepročitanih poruka.
+
+Ne otkrivaj sadržaj privatnih razgovora u nebezbednim notifikacijama.
+
+Kada je potrebno, u obaveštenju koristi samo tekst:
+
+„Imate novi odgovor iz MODA PLUS OUTLET prodavnice.“
+
+---
+
+# 23. POVEZIVANJE KONTAKT FORME I LIVE CHATA
+
+Kontakt forma i Live Chat ostaju dva posebna kanala.
+
+Međutim, ako kupac nakon slanja forme otvori Live Chat, ponudi opciju:
+
+„Nastavite razgovor o postojećem upitu“
+
+Povezivanje dozvoli samo ako korisnik ima autorizovan pristup tom upitu.
+
+Administrator treba da vidi da isti kupac već ima otvoren upit, kada je identitet pouzdano povezan.
+
+Nemoj automatski spajati razgovore samo zato što dva korisnika imaju isto ime.
+
+Ne praviti duplirane razgovore bez potrebe.
+
+Svaka komunikacija mora zadržati istoriju originalnog kanala.
+
+---
+
+# 24. POVEZIVANJE SA PORUDŽBINAMA
+
+Dodaj mogućnost:
+
+„Kreiraj porudžbinu iz razgovora“
+
+Administrator može prebaciti potrebne podatke kupca u postojeću formu za ručnu porudžbinu.
+
+Zatim bira:
+
+- Artikal.
+- Veličinu.
+- Boju.
+- Količinu.
+- Cenu.
+- Dozvoljeni popust.
+- Dostavu.
+- Način plaćanja.
+
+Pre potvrde proveri raspoložive zalihe.
+
+Ne sme se automatski kreirati porudžbina samo zato što je kupac napisao „Hoću da kupim“.
+
+Obavezno postoji jasan korak potvrde.
+
+Sačuvaj vezu između razgovora i kreirane porudžbine.
+
+Ne sme doći do dvostrukog umanjenja zaliha.
+
+---
+
+# 25. POVEZIVANJE SA KUPCIMA
+
+Ako postojeći sistem već ima bazu kupaca, poveži komunikaciju sa njom.
+
+Ako ne postoji, dodaj minimalnu evidenciju kontakata neophodnu za komunikaciju.
+
+Podaci:
+
+- Ime.
+- Telefon.
+- Email, ako je naveden.
+- Istorija razgovora.
+- Kontakt upiti.
+- Povezane porudžbine.
+- Datum poslednjeg kontakta.
+- Interne napomene.
+
+Ne kreiraj više nezavisnih nepovezanih evidencija istih kupaca.
+
+Izbegni automatsko spajanje po nepouzdanim podacima.
+
+Omogući ručnu proveru potencijalnih duplikata.
+
+---
+
+# 26. KOMUNIKACIONA STATISTIKA
+
+U admin panelu dodaj:
+
+- Broj novih chat razgovora.
+- Broj novih kontakt upita.
+- Broj upita sa fotografijama.
+- Broj poruka koje čekaju odgovor.
+- Prosečno vreme prvog odgovora.
+- Prosečno vreme rešavanja upita.
+- Najčešće teme pitanja.
+- Najtraženije veličine.
+- Najtraženije kategorije.
+- Broj porudžbina nastalih iz komunikacije.
+- Vrednost realizovanih porudžbina povezanih sa razgovorima.
+
+Omogući filtriranje po datumu i kanalu.
+
+Ne računaj svaku poruku kao novog kupca.
+
+Ne računaj samo slanje ponude kao realizovanu prodaju.
+
+Prikazuj samo statistiku zasnovanu na stvarnim podacima.
+
+---
+
+# 27. SIGURNOST ANONIMNIH RAZGOVORA
+
+Kupci ne moraju imati nalog, ali komunikacija mora biti bezbedna.
+
+Implementiraj:
+
+- Kriptografski nepredvidive pristupne tokene.
+- Serversku validaciju prava pristupa.
+- Bezbedne sesije.
+- Ograničenje pokušaja pristupa.
+- Odgovarajuće vreme isteka ili opoziv tokena.
+- Zaštitu od preuzimanja tuđih razgovora.
+- Zaštitu od neovlašćenog preuzimanja fotografija.
+- Zaštitu od pristupa admin porukama.
+- Zaštitu od IDOR ranjivosti.
+- Ograničenje broja poruka.
+- Ograničenje broja uploadova.
+- Zaštitu od automatizovanog spama.
+
+Ne stavljaj tajne pristupne tokene u analitiku, logove ili javne odgovore API-ja.
+
+Izbegni slanje pristupnih tokena trećim stranama putem referer podataka.
+
+Samo legitimni učesnik i ovlašćeni administrator smeju pristupati privatnom razgovoru.
+
+---
+
+# 28. ZAŠTITA OD SPAMA I ZLOUPOTREBE
+
+Implementiraj zaštitu sa minimalnim smetnjama za legitimne kupce.
+
+Koristi kombinaciju:
+
+- Rate limitinga.
+- Serverske validacije.
+- Honeypot polja u formama.
+- Kontrole veličine poruka.
+- Kontrole broja priloga.
+- Ograničenja ukupnog prostora za upload.
+- Ograničenja po sesiji i mrežnim signalima.
+- Provere sumnjivih obrazaca aktivnosti.
+
+CAPTCHA aktiviraj samo kada postoji opravdana potreba.
+
+Omogući administratoru označavanje spama, blokiranje zloupotrebe i vraćanje pogrešno označenog razgovora.
+
+Ne blokiraj legitimne kupce samo zbog zajedničke IP adrese.
+
+---
+
+# 29. ZAŠTITA PODATAKA I PRIVATNOST
+
+Obezbedi jasno obaveštenje o obradi podataka u kontakt formi i komunikacionom sistemu.
+
+Prikupljaj samo podatke potrebne za komunikaciju i realizaciju zahteva.
+
+Omogući:
+
+- Definisanje perioda čuvanja.
+- Bezbedno brisanje podataka kada je primenljivo.
+- Evidenciju svrhe obrade.
+- Odvajanje marketinške saglasnosti od slanja običnog upita.
+- Zaštitu ličnih podataka u logovima.
+- Kontrolu pristupa administratora.
+- Dokumentovano postupanje sa fotografijama.
+
+Fotografije koje kupci pošalju ne smeju automatski postati javni sadržaj prodavnice.
+
+Ne koristi ih za reklame bez posebnog odgovarajućeg odobrenja.
+
+Ne šalji privatne fotografije AI servisima bez opravdanog osnova i odgovarajuće transparentnosti.
+
+---
+
+# 30. MODEL BAZE PODATAKA
+
+Prilagodi konkretne nazive i strukturu postojećoj bazi.
+
+Izbegni nepotrebno dupliranje entiteta.
+
+Predložen logički model:
+
+### conversations
+
+- id
+- public_reference
+- channel: live_chat / contact_form
+- customer_id, opciono
+- anonymous_session_id
+- subject
+- category
+- status
+- priority
+- assigned_admin_id
+- related_product_id
+- related_order_id
+- created_at
+- updated_at
+- last_message_at
+- closed_at
+
+### messages
+
+- id
+- conversation_id
+- sender_type
+- sender_id
+- message_type
+- body
+- created_at
+- delivered_at
+- read_at
+- client_message_id
+- reply_to_message_id
+
+### attachments
+
+- id
+- message_id
+- storage_key
+- original_filename
+- mime_type
+- byte_size
+- width
+- height
+- created_at
+- processing_status
+
+### contact_requests
+
+Koristi ovaj entitet samo ako je potrebno odvojiti strukturirana polja forme od razgovora.
+
+- id
+- conversation_id
+- name
+- phone
+- email
+- topic
+- order_reference
+- desired_size
+- desired_color
+- budget
+- preferred_contact_method
+- created_at
+
+### admin_presence
+
+- admin_id
+- manual_status
+- last_active_at
+- current_connection_state
+
+### notification_subscriptions
+
+- id
+- admin_id
+- endpoint
+- subscription_metadata
+- created_at
+- revoked_at
+
+### audit_events
+
+- id
+- actor_id
+- action
+- object_type
+- object_id
+- created_at
+- relevant_metadata
+
+Ne skladišti kompletne fotografije kao ogromne Base64 stringove direktno u tabelama.
+
+Koristi odgovarajuće skladište objekata.
+
+Sva vremena čuvaj u standardizovanom formatu i pravilno prikazuj u Europe/Belgrade vremenskoj zoni.
+
+---
+
+# 31. API I SERVERSKA LOGIKA
+
+Implementiraj ili prilagodi postojeće serverske funkcije za:
+
+- Kreiranje anonimne chat sesije.
+- Kreiranje kontakt upita.
+- Slanje poruke.
+- Upload fotografija.
+- Preuzimanje autorizovanih fotografija.
+- Čitanje poruka.
+- Dohvatanje razgovora.
+- Označavanje pročitanog.
+- Promenu statusa.
+- Administratorski odgovor.
+- Pretragu razgovora.
+- Arhiviranje.
+- Spam moderaciju.
+- Kreiranje bezbednog pristupnog linka.
+- Pretplatu na obaveštenja.
+- Upravljanje dostupnošću.
+- Povezivanje artikala i porudžbina.
+
+Koristi stabilne jedinstvene identifikatore.
+
+Serverski proveravaj autorizaciju kod svake operacije.
+
+Primeni idempotentnost kod slanja poruka i upita.
+
+Ne dozvoli da ponovljeni zahtev kreira duple poruke.
+
+Koristi paginaciju istorije.
+
+Izbegni učitavanje svih razgovora i fotografija odjednom.
+
+Obezbedi konzistentno ponašanje u slučaju prekida interneta.
+
+---
+
+# 32. REAL-TIME KOMUNIKACIJA
+
+Proveri mogućnosti postojeće infrastrukture.
+
+Ako podržava bezbednu real-time komunikaciju, koristi odgovarajuće subscriptions ili WebSocket rešenje.
+
+Ako ne podržava, koristi pouzdano periodično osvežavanje.
+
+Osiguraj:
+
+- Ispravan redosled poruka.
+- Minimalno dupliranje zahteva.
+- Automatski reconnect.
+- Sinhronizaciju između uređaja.
+- Ispravno ponovno učitavanje istorije.
+- Bez gubitka poruka nakon promene stranice.
+- Prikaz greške kada slanje nije uspelo.
+- Bezbedno ponovno slanje.
+
+Real-time funkcionalnost ne sme da zahteva da vlasnik drži otvoren isti browser prozor neprekidno, ako su dostupne serverske notifikacije.
+
+---
+
+# 33. PODEŠAVANJA KOMUNIKACIONOG CENTRA
+
+Dodaj admin stranicu:
+
+„Podešavanja komunikacije“
+
+Omogući podešavanje:
+
+- Uključivanje/isključivanje Live Chata.
+- Uključivanje/isključivanje kontakt forme.
+- Naslov chata.
+- Pozdravne poruke.
+- Offline poruke.
+- Radnog vremena.
+- Kontakt telefona.
+- Viber broja.
+- Maksimalnog broja fotografija.
+- Maksimalne veličine fotografije.
+- Zvučnih obaveštenja.
+- Push obaveštenja.
+- Brzih odgovora.
+- Pravila arhiviranja.
+- Perioda čuvanja podataka.
+- Rasporeda obaveštenja.
+- Automatskog dodeljivanja razgovora, ako postoji više administratora.
+
+Podešavanja moraju imati serversku persistenciju.
+
+Ne izlaži tajne ili administrativne konfiguracije kupcima.
+
+---
+
+# 34. PRISTUPAČNOST I UX DETALJI
+
+Live Chat i kontakt forma moraju biti upotrebljivi i na manjim ekranima.
+
+Obavezno:
+
+- Jasne oznake polja.
+- Vidljiv fokus tastature.
+- Podrška za čitače ekrana.
+- Dovoljno velike dodirne površine.
+- Pristupačan kontrast.
+- Navigacija tastaturom.
+- Zatvaranje chata tasterom Escape na desktopu.
+- Fokus unutar otvorenog modalnog prozora.
+- Povratak fokusa nakon zatvaranja.
+- Prikaz greške pored odgovarajućeg polja.
+- Jasno označena obavezna polja.
+- Potvrda uspešnog slanja.
+- Prikaz napretka otpremanja fotografija.
+- Mobilni prikaz bez horizontalnog skrolovanja.
+- Bez gubitka nacrta poruke pri zatvaranju.
+
+Testiraj:
+
+320 px, 360 px, 390 px, 430 px, 768 px, 1024 px i 1440 px.
+
+---
+
+# 35. PERFORMANSE
+
+Chat ne sme usporavati prodavnicu.
+
+Primeni:
+
+- Lazy loading chata kada je moguće.
+- Odvojeno učitavanje istorije.
+- Paginaciju poruka.
+- Virtualizaciju veoma dugačkih razgovora, po potrebi.
+- Kompresiju fotografija.
+- Thumbnail prikaze.
+- Keširanje koje poštuje privatnost.
+- Ograničenje nepotrebnih real-time događaja.
+- Optimalan broj mrežnih zahteva.
+- Čišćenje nepotrebnih listeners i subscriptions.
+
+Javni katalog i kupovina moraju ostati brzi i funkcionalni čak i ako komunikacioni servis privremeno nije dostupan.
+
+---
+
+# 36. GREŠKE I RUBNI SLUČAJEVI
+
+Obavezno obradi:
+
+- Gubitak internet konekcije.
+- Ponovno povezivanje.
+- Slanje iste poruke dva puta.
+- Osvežavanje stranice tokom učitavanja slike.
+- Prekoračenje veličine fajla.
+- Nepodržan tip fajla.
+- Nevažeći pristupni link.
+- Istek anonimne sesije.
+- Administrator nije dostupan.
+- Administrator odgovara sa dva uređaja.
+- Dva administratora otvaraju isti razgovor.
+- Kupac otvara isti chat u dva taba.
+- Kupac napušta stranicu.
+- Kupac se vraća posle nekoliko dana.
+- Kupac šalje poruku o obrisanom ili rasprodatom artiklu.
+- Greška u skladištu fotografija.
+- Greška u slanju notifikacije.
+- Prekid serverske veze.
+- Otkazano učitavanje priloga.
+- Pokušaj pristupa tuđem razgovoru.
+
+Sistem mora jasno prijaviti grešku, bez lažnog prikaza uspeha.
+
+---
+
+# 37. OBAVEZNI TESTOVI
+
+Koristi izolovanu testnu bazu i testne podatke.
+
+### Test 1 — Live Chat
+
+Kupac otvara chat, šalje tekst, administrator odgovara.
+
+Proveri oba browsera.
+
+### Test 2 — Fotografija
+
+Kupac šalje fotografiju, administrator je otvara i odgovara fotografijom.
+
+### Test 3 — Kontakt forma
+
+Kupac šalje kontakt upit i dobija stvarnu potvrdu sa šifrom.
+
+### Test 4 — Kontakt forma sa fotografijama
+
+Kupac šalje više fotografija i dodatne informacije o garderobi.
+
+Proveri trajno čuvanje.
+
+### Test 5 — Istorija
+
+Kupac osvežava stranicu i ponovo otvara razgovor.
+
+Prethodne poruke ostaju dostupne u okviru autorizovane sesije.
+
+### Test 6 — Offline admin
+
+Kupac šalje poruku kada administrator nije dostupan.
+
+Poruka se čuva, a administrator je vidi po povratku.
+
+### Test 7 — Obaveštenja
+
+Proveri brojače, zvuk i podržane push notifikacije.
+
+### Test 8 — Pitanje o artiklu
+
+Kupac klikne na „Pitajte za ovaj artikal“.
+
+Administrator vidi ispravan ID proizvoda.
+
+### Test 9 — Kreiranje porudžbine
+
+Administrator kreira probnu porudžbinu iz razgovora.
+
+Proveri povezivanje, cene i zalihe.
+
+### Test 10 — Privatnost
+
+Jedna anonimna sesija pokušava da otvori razgovor druge sesije.
+
+Pristup mora biti odbijen.
+
+### Test 11 — Spam
+
+Pošalji seriju ponovljenih zahteva u kontrolisanim uslovima.
+
+Proveri rate limiting.
+
+### Test 12 — Velike fotografije
+
+Proveri ograničenja i bezbednu obradu.
+
+### Test 13 — Dupla poruka
+
+Simuliraj ponovljene identične serverske zahteve sa istim idempotency identifikatorom.
+
+Samo jedna poruka sme biti kreirana.
+
+### Test 14 — Mobilni prikaz
+
+Testiraj chat i kontakt formu na različitim dimenzijama.
+
+### Test 15 — Bezbednost administracije
+
+Neautorizovan korisnik pokušava da čita, šalje i briše administrativne poruke.
+
+Zahtevi moraju biti odbijeni.
+
+### Test 16 — Istovremeni rad
+
+Dva administratora rade u istom razgovoru.
+
+Sistem mora ostati konzistentan i ne sme duplirati poruke.
+
+### Test 17 — Pad komunikacionog servisa
+
+Simuliraj privremenu nedostupnost.
+
+Proveri da katalog, korpa, porudžbine i postojeće zalihe nastavljaju ispravno da funkcionišu.
+
+### Test 18 — Regresija
+
+Pokreni sve postojeće testove prodavnice.
+
+Ne prihvataj regresije u postojećoj kupovini, popustima, zalihama ili admin funkcijama.
+
+---
+
+# 38. REDOSLED REALIZACIJE
+
+FAZA 1:
+Analiza postojeće arhitekture, autentifikacije, baze i bezbednosti.
+
+FAZA 2:
+Model komunikacije, serverski API, privatni pristup i skladište priloga.
+
+FAZA 3:
+Kompletan Live Chat za kupce.
+
+FAZA 4:
+Kompletna kontakt stranica i napredna forma.
+
+FAZA 5:
+Jedinstveni admin komunikacioni centar.
+
+FAZA 6:
+Povezivanje sa artiklima, zalihama, kupcima i porudžbinama.
+
+FAZA 7:
+Obaveštenja, online/offline status i brzi odgovori.
+
+FAZA 8:
+Statistika, podešavanja i optimizacija.
+
+FAZA 9:
+Bezbednosni testovi, testovi više browsera, mobilno testiranje i regresija.
+
+Posle svake faze proveri da postojeća prodavnica radi.
+
+Ne prelazi na sledeću fazu dok postoje kritične greške u prethodnoj.
+
+---
+
+# 39. ZAVRŠNI KRITERIJUMI
+
+Sistem je završen tek kada:
+
+- Kupac može da otvori Live Chat.
+- Kupac može da pošalje poruku.
+- Kupac može da pošalje fotografiju.
+- Administrator prima poruke.
+- Administrator odgovara preko sajta.
+- Kupac prima odgovor.
+- Istorija razgovora se čuva.
+- Kontakt forma stvarno šalje upite.
+- Kontakt forma prima fotografije.
+- Administrator vidi kontakt upite.
+- Administrator može odgovoriti na kontakt upit.
+- Kupac može bezbedno nastaviti razgovor.
+- Oba kanala rade nezavisno.
+- Oba kanala se vide u centralnoj administraciji.
+- Komunikacija radi na mobilnom i desktopu.
+- Podaci su zaštićeni.
+- Nema pristupa tuđim razgovorima.
+- Poruke se ne dupliraju.
+- Fotografije se pravilno čuvaju.
+- Postojeće porudžbine i zalihe ostaju ispravne.
+- Postojeći katalog i kupovina nastavljaju normalno da rade.
+
+Ako neka funkcija nije implementirana ili nije proverena, jasno je označi.
+
+---
+
+# 40. ZAVRŠNI IZVEŠTAJ
+
+Na kraju dostavi izveštaj sa:
+
+1. Pregledom postojećeg komunikacionog sistema.
+2. Spiskom novih funkcionalnosti.
+3. Spiskom izmenjenih komponenti.
+4. Promenama u bazi.
+5. Novim API rutama.
+6. Implementiranim bezbednosnim merama.
+7. Testovima i njihovim rezultatima.
+8. Mobilnim testovima.
+9. Testovima u dva browsera.
+10. Testovima slanja fotografija.
+11. Statusom real-time komunikacije.
+12. Statusom push obaveštenja.
+13. Ograničenjima platforme.
+14. Potrebnim spoljnim servisima ili konfiguracijama.
+15. Potvrdom da postojeća prodavnica radi bez regresija.
+
+Za svaku funkcionalnost prikaži jedan od sledećih statusa:
+
+- Implementirano i testirano.
+- Implementirano, ali nije testirano.
+- Delimično implementirano.
+- Nije implementirano.
+- Čeka konfiguraciju.
+- Blokirano tehničkim ograničenjem.
+
+Ne tvrdi da je funkcionalnost završena samo zato što je interfejs napravljen.
+
+## KONAČNI CILJ
+
+Želim da MODA PLUS OUTLET poseduje sopstveni, pouzdan i profesionalno dizajniran centar za komunikaciju.
+
+Kupac treba da može da:
+
+- Razgovara sa prodavcem uživo.
+- Pošalje fotografije garderobe.
+- Pita za veličinu, cenu i dostupnost.
+- Pošalje strukturiran kontakt upit.
+- Prijavi problem sa porudžbinom.
+- Dobije odgovor.
+- Nastavi komunikaciju kasnije.
+- Pogleda artikle koje mu prodavac predloži.
+- Poruči odgovarajuću robu.
+
+Vlasnik treba da može preko telefona da:
+
+- Čita poruke.
+- Odgovara.
+- Pregleda fotografije.
+- Šalje fotografije i artikle.
+- Prima obaveštenja.
+- Prati kontakt upite.
+- Organizuje razgovore.
+- Vodi evidenciju kupaca.
+- Pretvara razgovore u porudžbine.
+- Prati interesovanje za određenu garderobu.
+
+Sve mora biti elegantno, brzo, pregledno, jednostavno za kupca i pouzdano za administratora.
+
+Kreni od analize postojeće aplikacije i implementiraj kompletan sistem po fazama, uz očuvanje svih postojećih funkcionalnosti.

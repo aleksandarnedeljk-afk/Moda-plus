@@ -1,0 +1,6 @@
+{
+  "name": "MODA PLUS OUTLET — Velika rasprodaja zaliha",
+  "description": "Odličan stil. Još bolje cene. Moda za celu porodicu po outlet cenama — novo sa etiketom, plaćanje pouzećem i brza Post Express dostava širom Srbije.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

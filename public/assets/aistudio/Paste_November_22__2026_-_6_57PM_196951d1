@@ -1,0 +1,1247 @@
+# ATELIER OUTLET — PROFESIONALNA NADOGRADNJA POSTOJEĆE INTERNET PRODAVNICE
+
+Ponašaj se kao senior full-stack developer, e-commerce arhitekta, stručnjak za UX/UI dizajn luksuznih prodavnica, upravljanje zalihama, prodaju, digitalni marketing, SEO, bezbednost i automatizovano testiranje.
+
+Tvoj zadatak je da postojeću aplikaciju ATELIER OUTLET — Velika Rasprodaja Zaliha unaprediš u potpuno funkcionalnu, profesionalnu, pouzdanu i komercijalno spremnu internet prodavnicu, prilagođenu tržištu Srbije.
+
+Glavni cilj je što efikasnija prodaja postojećih zaliha garderobe, jednostavna kupovina preko mobilnog telefona i maksimalno jednostavno upravljanje celokupnim poslovanjem preko mobilnog admin panela.
+
+## 1. STROGA PRAVILA IMPLEMENTACIJE
+
+- NE pravi aplikaciju ispočetka.
+- NE briši postojeće artikle, fotografije, zalihe, kupce i porudžbine.
+- NE menjaj funkcionalnosti koje već ispravno rade.
+- NE uklanjaj postojeće filtere, kategorije, popuste i paket ponude.
+- NE menjaj postojeći luksuzni vizuelni identitet.
+- Zadrži postojeću paletu boja i tipografiju Playfair Display + Plus Jakarta Sans.
+- Zadrži postojeću mobilnu optimizaciju.
+- Zadrži mogućnost brze porudžbine u jednom koraku.
+- Ne dupliraj postojeće komponente, entitete i funkcije.
+- Ne uvodi nepotrebne eksterne servise i plaćene integracije.
+- Pre ozbiljnih promena napravi rezervnu kopiju postojećih podataka.
+- Sve migracije moraju biti kompatibilne sa postojećom bazom.
+- Ne dodaj lažne recenzije, lažne zalihe, lažne kupce ili izmišljene statistike.
+- Ne prikazuj dugmad koja nemaju stvarnu funkcionalnost.
+- Sve mora biti na srpskom jeziku, latinicom.
+- Valuta je RSD.
+- Vremenska zona je Europe/Belgrade.
+
+Prvo pregledaj kompletnu postojeću implementaciju i utvrdi šta već postoji, šta radi, šta nedostaje i šta zahteva popravku.
+
+Nemoj samo opisivati plan. Implementiraj funkcionalnosti po fazama, testiraj ih i na kraju dostavi konkretan izveštaj.
+
+## 2. KOMPLETNA REVIZIJA POSTOJEĆE APLIKACIJE
+
+Pregledaj:
+
+- Sve stranice, komponente i rute.
+- Postojeće serverske funkcije.
+- Bazu artikala, veličina i zaliha.
+- Bazu porudžbina i kupaca.
+- Način čuvanja fotografija.
+- Autentifikaciju administratora.
+- Pravila pristupa serverskim podacima.
+- Proračun popusta, dostave i paket ponuda.
+- Mobilni i desktop prikaz.
+- Postojeće jedinične i browser testove.
+- Način oporavka aplikacije nakon greške.
+- Performanse i SEO.
+- Sve postojeće funkcionalnosti admin panela.
+
+Popravi samo stvarne probleme i proširi postojeće funkcionalnosti.
+
+## 3. KRITIČNA BEZBEDNOST ADMIN PANELA
+
+Trenutni admin panel koristi podrazumevani PIN 2026.
+
+Ovo nije dovoljno za produkcijsku internet prodavnicu.
+
+Implementiraj bezbednu serversku autentifikaciju.
+
+Obavezno:
+
+- Ukloni podrazumevani produkcijski PIN.
+- PIN ili lozinka ne smeju biti dostupni u frontend kodu.
+- Koristi bezbedno heširanje kredencijala i serverske tajne.
+- Omogući promenu lozinke ili PIN-a.
+- Koristi bezbedne sesije.
+- Omogući automatsko zaključavanje nakon neaktivnosti.
+- Ograniči broj neuspešnih pokušaja prijave.
+- Dodaj zaštitu od brute-force napada.
+- Dodaj odjavljivanje administratora.
+- Zaštiti sve admin API rute.
+- Serverski proveravaj dozvole za dodavanje, izmenu i brisanje.
+- Spreči neovlašćen pristup porudžbinama i podacima kupaca.
+
+Zadrži jednostavnost mobilnog pristupa administratora, ali ne oslanjaj se isključivo na klijentski PIN ekran.
+
+Po mogućnosti omogući uloge Vlasnik i Zaposleni, sa različitim dozvolama.
+
+## 4. PROFESIONALNO UPRAVLJANJE ARTIKLIMA
+
+Proširi postojeći model artikla.
+
+Svaki artikal treba da ima:
+
+- Automatski generisanu jedinstvenu šifru artikla — SKU.
+- Naziv.
+- Brend.
+- Kategoriju i potkategoriju.
+- Pol i uzrasnu grupu, gde je primenljivo.
+- Boju.
+- Veličine.
+- Stanje po veličini i boji.
+- Materijal.
+- Opis.
+- Napomenu o kroju.
+- Tabelu veličina.
+- Nabavnu cenu.
+- Redovnu cenu.
+- Outlet cenu.
+- Procenat popusta.
+- Minimalnu dozvoljenu prodajnu cenu, opciono.
+- Glavnu fotografiju.
+- Dodatne fotografije.
+- Datum nabavke.
+- Datum objavljivanja.
+- Dobavljača, opciono.
+- Lokaciju robe u magacinu, opciono.
+- Internu napomenu vidljivu samo administratoru.
+
+Statusi artikla:
+
+- Aktivan.
+- Skriven.
+- Nacrt.
+- Rasprodat.
+- Rezervisan, gde je primenljivo.
+- Arhiviran.
+
+Omogući da svaki artikal ima više varijanti, na primer crna M, crna L, bela M i bela L.
+
+Ne dupliraj ceo artikal za svaku veličinu.
+
+Nabavna cena, profit i interne napomene nikada ne smeju biti dostupni kupcima ni kroz javni API.
+
+## 5. ULTRABRZ UNOS ROBE PREKO TELEFONA
+
+Ovo je jedan od najvažnijih modula.
+
+Administrator treba da može da fotografiše i objavi artikal direktno telefonom, bez korišćenja računara.
+
+Zadrži postojeći brzi unos i unapredi ga.
+
+Omogući:
+
+- Fotografisanje direktno kamerom.
+- Dodavanje više fotografija.
+- Izbor fotografija iz galerije.
+- Automatsku kompresiju i optimizaciju slika.
+- Promenu redosleda fotografija.
+- Izbor glavne fotografije.
+- Brzo unošenje naziva.
+- Izbor kategorije i brenda.
+- Unos nabavne i prodajne cene.
+- Automatski obračun procenta popusta.
+- Unos količina preko velikih +/- dugmadi.
+- Brze matrice veličina.
+- Pamćenje poslednjeg brenda i kategorije.
+- Dupliranje prethodnog artikla bez dupliranja zaliha.
+- Sačuvaj kao nacrt.
+- Objavi odmah.
+- Sačuvaj i dodaj sledeći.
+
+Dodaj masovni unos artikala iz više fotografija.
+
+Ako postoji AI mogućnost analize slike, može predložiti naziv, kategoriju, boju i opis artikla. Administrator mora potvrditi podatke.
+
+AI ne sme izmišljati brend, sastav materijala, autentičnost robe ili poreklo artikla.
+
+Cilj je da običan artikal sa veličinama i fotografijama može da se unese za manje od jednog minuta.
+
+## 6. CENTRALNI SISTEM ZALIHA
+
+Uspostavi jedinstveni serverski izvor istine za zalihe.
+
+Za svaku varijantu artikla vodi:
+
+- Fizičko stanje.
+- Rezervisanu količinu.
+- Raspoloživu količinu.
+- Prodatu količinu.
+- Vraćenu količinu.
+- Oštećenu količinu.
+
+Raspoloživo stanje = fizičko stanje − aktivne rezervacije.
+
+Postojeće stanje migriraj pažljivo, bez ponovnog oduzimanja ranije prodatih artikala.
+
+Obavezno spreči prodaju istog poslednjeg komada dvama kupcima.
+
+Kada dva kupca istovremeno pokušaju da poruče poslednji komad, samo jedna porudžbina sme biti uspešna.
+
+Kreiranje porudžbine, provera raspoložive količine i rezervacija ili umanjenje zaliha moraju biti jedna bezbedna serverska operacija.
+
+Koristi atomske transakcije ili odgovarajući mehanizam konkurentnog pristupa bazi.
+
+Ako platforma ne podržava potrebno zaključavanje ili transakcije, jasno prijavi ograničenje i nemoj tvrditi da je problem dvostruke prodaje rešen.
+
+Spreči negativne zalihe.
+
+Dodaj istoriju kretanja zaliha:
+
+- Početno stanje.
+- Nova nabavka.
+- Rezervacija.
+- Prodaja.
+- Otkazivanje.
+- Povraćaj.
+- Oštećenje.
+- Ručna korekcija.
+
+Svaka korekcija mora imati datum i razlog.
+
+Dodaj inventuru i brzo usklađivanje fizičkog stanja.
+
+## 7. NAPREDNA PRODAJNICA I KATALOG
+
+Zadrži postojeći luksuzni dizajn i mobilnu mrežu sa dve kolone.
+
+Proširi kategorije prema stvarnom asortimanu.
+
+Predložene kategorije:
+
+- Ženska garderoba.
+- Muška garderoba.
+- Dečja garderoba.
+- Bebi garderoba.
+- Majice.
+- Duksevi.
+- Trenerke.
+- Farmerke.
+- Pantalone.
+- Haljine.
+- Jakne.
+- Košulje.
+- Obuća.
+- Aksesoari.
+
+Administrator mora moći da kreira, uređuje, sakriva i menja redosled kategorija bez izmene koda.
+
+Dodaj automatske kolekcije:
+
+- Novo u ponudi.
+- Poslednji komadi.
+- Najveći popusti.
+- Rasprodaja.
+- Sve do 999 RSD.
+- Sve do 1.499 RSD.
+- Sve do 1.999 RSD.
+- Sve do 2.999 RSD.
+- Najprodavaniji artikli, na osnovu stvarne prodaje.
+
+Dodaj filtere:
+
+- Kategorija.
+- Brend.
+- Veličina.
+- Boja.
+- Raspon cena.
+- Procenat popusta.
+- Dostupnost.
+
+Prikaži broj rezultata uz filtere kada je moguće.
+
+Zadrži sinhronizaciju filtera sa URL parametrima.
+
+Omogući deljenje direktnog linka ka filtriranoj ponudi.
+
+Rasprodati artikli mogu se prikazivati na kraju kataloga ili sakriti, prema podešavanju administratora.
+
+## 8. POSEBNA STRANICA ZA SVAKI ARTIKAL
+
+Pored postojećeg brzog modalnog prozora, svaki artikal treba da ima trajnu javnu adresu.
+
+Primer:
+
+/artikal/crna-zenska-jakna-123
+
+Stranica treba da sadrži:
+
+- Galeriju fotografija.
+- Fullscreen pregled i zumiranje.
+- Naziv i brend.
+- Redovnu i outlet cenu.
+- Stvarni popust.
+- Dostupne veličine.
+- Dostupne boje.
+- Tabelu veličina.
+- Opis i materijal.
+- Informacije o dostavi.
+- Dugme Poruči odmah.
+- Dugme Dodaj u korpu.
+- Dugme Podeli artikal.
+- Slične dostupne artikle.
+
+Ovo je važno za deljenje proizvoda preko Facebooka, Instagrama, Vibera i Google pretrage.
+
+Zadrži postojeću brzu porudžbinu iz kataloga.
+
+## 9. PRAVA KORPA — VIŠE RAZLIČITIH ARTIKALA
+
+Trenutnu brzu porudžbinu ne uklanjaj.
+
+Dodaj punu korpu koja omogućava kupcu da u jednoj porudžbini kupi više različitih artikala.
+
+Kupac mora moći da:
+
+- Doda različite artikle.
+- Izabere različite veličine.
+- Izabere različite boje.
+- Promeni količine.
+- Ukloni artikal.
+- Nastavi kupovinu.
+- Vidi međuzbir.
+- Vidi primenjene popuste.
+- Vidi cenu dostave.
+- Vidi konačnu cenu.
+
+Korpa treba da ostane sačuvana nakon osvežavanja stranice, bez obaveznog otvaranja korisničkog naloga.
+
+Ponovo proveri zalihe, cene i popuste na serveru pri završavanju porudžbine.
+
+Korpa ne garantuje rezervaciju robe dok porudžbina nije potvrđena, osim ako je posebno implementirana vremenski ograničena rezervacija.
+
+Dodaj mobilnu lepljivu traku za pregled korpe kada u njoj postoje artikli.
+
+## 10. PAKET POPUSTI I PROMOCIJE
+
+Sačuvaj postojeće paket ponude:
+
+- Jedan komad — redovna outlet cena.
+- Dva komada — dodatnih 15% popusta.
+- Tri komada — dodatnih 20% popusta i besplatna dostava.
+
+Omogući administratoru da podešava pravila bez izmene koda.
+
+Podrži opcionalne promocije:
+
+- Popust na određenu kategoriju.
+- Popust na određeni brend.
+- Dodatni popust na poslednje komade.
+- Popust na ukupnu vrednost korpe.
+- Kupon kod.
+- Besplatna dostava.
+- Vremenski ograničena akcija.
+- Posebna rasprodaja odabrane kolekcije.
+
+Administrator određuje da li paket popusti važe za različite artikle ili samo određene proizvode.
+
+Definiši pravila kombinovanja popusta.
+
+Po pravilu spreči nekontrolisano sabiranje više popusta.
+
+Prikaži kupcu stvarnu uštedu i konačnu cenu.
+
+Ne prikazuj izmišljene stare cene ili lažne procente popusta.
+
+Sve cene i popuste izračunavaj i proveravaj na serveru.
+
+## 11. AUTOMATSKA RASPRODAJA STARIH ZALIHA
+
+Dodaj poseban admin modul Rasprodaja zaliha.
+
+Prikaži:
+
+- Artikle koji dugo stoje.
+- Artikle bez prodaje.
+- Artikle sa samo jednim preostalim komadom.
+- Artikle sa viškom određenih veličina.
+- Najsporije prodavane kategorije.
+- Ukupnu nabavnu vrednost robe.
+- Potencijalnu prodajnu vrednost robe.
+
+Omogući masovno snižavanje cena.
+
+Primeri:
+
+- Dodatnih 10% na starije zalihe.
+- Dodatnih 20% na poslednje komade.
+- Svi odabrani artikli za 999 RSD.
+- Svi odabrani artikli za 1.499 RSD.
+
+Pre primene prikaži:
+
+- Trenutne cene.
+- Nove cene.
+- Procenjenu maržu.
+- Broj obuhvaćenih artikala.
+- Upozorenje ako cena pada ispod nabavne ili minimalne dozvoljene cene.
+
+Promene izvršavaj tek nakon potvrde administratora.
+
+Omogući pregled istorije promena cena i vraćanje na prethodne vrednosti.
+
+## 12. MAKSIMALNO JEDNOSTAVNA KUPOVINA
+
+Kupovina mora ostati bez obavezne registracije.
+
+Obavezna polja:
+
+- Ime i prezime.
+- Broj mobilnog telefona.
+- Ulica i broj.
+- Mesto.
+- Poštanski broj.
+
+Opciona polja:
+
+- Email.
+- Stan, sprat i ulaz.
+- Napomena za dostavu.
+
+Omogući pamćenje podataka kupca na njegovom uređaju samo uz odgovarajuću saglasnost i mogućnost brisanja.
+
+Zadrži plaćanje pouzećem.
+
+Ne dodaj kartično plaćanje bez stvarne, bezbedne integracije i odobrenja vlasnika prodavnice.
+
+Kupac pre potvrde mora videti:
+
+- Sve artikle.
+- Veličine i boje.
+- Količine.
+- Popuste.
+- Dostavu.
+- Konačan iznos pouzeća.
+- Relevantne uslove kupovine.
+
+Nakon kupovine prikaži:
+
+- Jedinstvenu šifru porudžbine.
+- Potvrdu da je porudžbina primljena.
+- Konačan iznos.
+- Način plaćanja.
+- Informacije o praćenju.
+- Kontakt prodavnice.
+
+Spreči duple porudžbine nastale dvostrukim klikom, osvežavanjem ili ponovljenim serverskim zahtevom.
+
+## 13. PROFESIONALNO UPRAVLJANJE PORUDŽBINAMA
+
+Proširi postojeći admin modul.
+
+Statusi porudžbine:
+
+- Nova.
+- Čeka potvrdu.
+- Potvrđena.
+- U pripremi.
+- Spakovana.
+- Poslata.
+- Uručena.
+- Otkazana.
+- Nepreuzeta.
+- Vraćena.
+- Delimično vraćena.
+- Reklamacija.
+
+Svaka porudžbina mora imati:
+
+- Jedinstveni interni ID.
+- Javnu šifru porudžbine.
+- Datum i vreme.
+- Podatke kupca.
+- Artikle i varijante.
+- Nabavne i prodajne cene u trenutku kupovine.
+- Popuste.
+- Dostavu.
+- Konačan iznos.
+- Status.
+- Broj pošiljke.
+- Internu napomenu.
+- Istoriju promena statusa.
+
+Kasnije promene cene artikla ne smeju menjati stare porudžbine.
+
+Dodaj brzo menjanje statusa jednim dodirom.
+
+Dodaj masovne akcije nad odabranim porudžbinama.
+
+Omogući štampanje naloga za pakovanje i detalja porudžbine.
+
+Dodaj pretragu po imenu, telefonu, šifri porudžbine, artiklu i broju pošiljke.
+
+## 14. OTKAZIVANJE, POVRAĆAJ I VRAĆANJE ZALIHA
+
+Pravilno poveži status porudžbine sa zalihama.
+
+Ako je porudžbina otkazana pre slanja, oslobodi odgovarajuću rezervaciju ili vrati umanjenu količinu tačno jednom.
+
+Ako je paket poslat, ne vraćaj robu automatski na raspoloživo stanje samo zbog promene statusa.
+
+Kod nepreuzetog ili vraćenog paketa, administrator mora potvrditi da je roba fizički vraćena i ispravna.
+
+Omogući delimičan povraćaj pojedinačnih artikala.
+
+Dodaj razloge:
+
+- Pogrešna veličina.
+- Kupac odustao.
+- Nepreuzet paket.
+- Oštećenje.
+- Pogrešan artikal.
+- Ostalo.
+
+Oštećeni artikli ne vraćaju se automatski u prodaju.
+
+Spreči dvostruko vraćanje iste količine na stanje.
+
+Omogući korekciju finansijskog rezultata nakon povraćaja.
+
+## 15. RUČNE PORUDŽBINE IZ ADMIN PANELA
+
+Ovo je veoma važno zbog prodaje preko Facebooka, Instagrama, Vibera i direktnog telefonskog kontakta.
+
+Dodaj dugme „Nova ručna porudžbina“.
+
+Administrator mora moći da:
+
+- Izabere postojećeg ili novog kupca.
+- Unese ime, telefon i adresu.
+- Izabere više artikala.
+- Izabere veličine i količine.
+- Unese odobreni popust.
+- Izabere način dostave.
+- Izabere način naplate.
+- Sačuva porudžbinu.
+
+Dodaj izvor porudžbine:
+
+- Internet prodavnica.
+- Facebook.
+- Instagram.
+- Viber.
+- Telefon.
+- Lično preuzimanje.
+- Ostalo.
+
+Sve ručne porudžbine moraju koristiti iste zalihe i finansijsku logiku kao porudžbine sa sajta.
+
+Ne sme postojati odvojena nepovezana evidencija koja dovodi do dupliranja prodaje.
+
+## 16. VIBER I DIREKTNA KOMUNIKACIJA
+
+Zadrži postojeću Viber funkcionalnost i unapredi je.
+
+Administrator u podešavanjima unosi zvanični Viber kontakt prodavnice.
+
+Omogući deljenje artikla i sadržaja korpe.
+
+Pripremi poruku sa:
+
+- Nazivom artikla.
+- Veličinom.
+- Bojom.
+- Količinom.
+- Cenama.
+- Linkom do artikla.
+
+Ne prikazuj poruku da je kupac poručio samo zato što je otvorio Viber.
+
+Viber upit nije automatski potvrđena porudžbina.
+
+Ako je porudžbina već kreirana na sajtu, Viber komunikacija treba da sadrži postojeću šifru porudžbine umesto kreiranja nove.
+
+Proveri stvarno ponašanje Viber linkova na Androidu, iPhone-u i desktopu.
+
+Ako direktno otvaranje razgovora nije podržano, ponudi kopiranje poruke i jasan kontakt prodavnice.
+
+Dodaj gotove poruke administratoru:
+
+- Potvrda porudžbine.
+- Provera adrese.
+- Obaveštenje o slanju.
+- Broj pošiljke.
+- Obaveštenje o nedostupnom artiklu.
+- Odgovor na reklamaciju.
+
+## 17. DOSTAVA I KURIRSKE SLUŽBE
+
+Zadrži postojeća pravila Post Express dostave:
+
+- Cena dostave 450 RSD.
+- Besplatna dostava preko 4.000 RSD.
+- Besplatna dostava za odgovarajući paket od tri komada.
+
+U admin podešavanjima omogući promenu cene i praga besplatne dostave.
+
+Jasno definiši da li se prag računa nakon popusta i kako se tretira tačno 4.000 RSD. Sačuvaj trenutno ispravno ponašanje dok vlasnik ne izmeni pravilo.
+
+Dodaj:
+
+- Izbor kurirske službe.
+- Stvarni trošak dostave.
+- Iznos dostave naplaćen kupcu.
+- Broj pošiljke.
+- Datum slanja.
+- Datum uručenja.
+- Iznos pouzeća.
+- Status pošiljke.
+- Troškove povratne dostave.
+
+Omogući CSV/Excel izvoz porudžbina za pripremu pošiljaka.
+
+Dodaj opciju štampanja adresnih nalepnica.
+
+Direktnu integraciju sa kurirskom službom implementiraj samo ako postoji odgovarajući zvanični API i potrebni pristupni podaci.
+
+Ne izmišljaj statuse pošiljaka.
+
+## 18. PRAĆENJE PORUDŽBINE I PRIVATNOST
+
+Zadrži postojeći prozor Praćenje / Kontakt.
+
+Međutim, broj telefona sam po sebi ne sme omogućiti neovlašćenoj osobi pristup svim porudžbinama kupca.
+
+Koristi:
+
+- Šifru porudžbine i dodatnu bezbednosnu proveru; ili
+- Jedinstveni privatni link za praćenje; ili
+- Verifikaciju telefona, ako postoji odgovarajući servis.
+
+Javni pregled ne sme otkrivati kompletnu adresu, interne napomene, nabavne cene ili podatke drugih kupaca.
+
+Dodaj ograničenje broja pokušaja pretrage.
+
+Kupcu prikaži samo potreban status, osnovne detalje i broj pošiljke kada je dostupan.
+
+## 19. EVIDENCIJA KUPACA — JEDNOSTAVAN CRM
+
+Dodaj admin modul Kupci.
+
+Za svakog kupca prikaži:
+
+- Ime i prezime.
+- Telefon.
+- Adresu, kada je potrebna za dostavu.
+- Istoriju porudžbina.
+- Broj uspešno uručenih porudžbina.
+- Broj otkazanih porudžbina.
+- Broj nepreuzetih paketa.
+- Ukupan iznos realizovane kupovine.
+- Datum poslednje porudžbine.
+- Internu napomenu.
+
+Spreči nepotrebno dupliranje kupaca.
+
+Omogući pregled potencijalno dupliranih zapisa i ručno spajanje uz potvrdu.
+
+Dodaj informativno upozorenje administratoru ako je kupac ranije imao nepreuzete pakete.
+
+Ne blokiraj automatski kupovinu bez odluke administratora.
+
+Podatke kupaca čuvaj samo koliko je potrebno za poslovanje i zakonske obaveze.
+
+## 20. FINANSIJE — PROMET, NABAVNA VREDNOST I ZARADA
+
+Dodaj profesionalni admin modul Finansije.
+
+Najvažnije je da vlasnik zna koliko je stvarno zaradio, a ne samo koliki je promet.
+
+Prikaži:
+
+- Ukupnu vrednost novih porudžbina.
+- Vrednost potvrđenih porudžbina.
+- Vrednost poslatih porudžbina.
+- Realizovanu prodaju.
+- Naplaćena pouzeća.
+- Očekivana pouzeća.
+- Nabavnu vrednost prodate robe.
+- Trošak dostave.
+- Trošak povrata paketa.
+- Trošak ambalaže.
+- Troškove reklama.
+- Kurirske i bankarske naknade.
+- Ostale poslovne troškove.
+- Bruto maržu.
+- Procenjenu zaradu nakon evidentiranih troškova.
+
+Izračunavaj:
+
+Bruto marža u RSD = realizovana neto prodaja robe − nabavna vrednost prodate robe.
+
+Rezultat nakon direktnih troškova = bruto marža + kupcu naplaćena dostava − stvarni trošak dostave − ambalaža − ostali direktni troškovi.
+
+Opciono omogući evidentiranje poreza i ostalih poslovnih rashoda.
+
+Ne nazivaj procenjenu maržu čistom neto dobiti ako svi relevantni porezi i troškovi nisu evidentirani.
+
+Ne računaj otkazane porudžbine kao realizovan prihod.
+
+Kod povraćaja pravilno storniraj odgovarajuće iznose.
+
+Ako nabavna cena nije uneta, prikaži „Nabavna cena nije evidentirana“, umesto izmišljanja zarade.
+
+## 21. KONTROLA KURIRSKIH POUZEĆA
+
+Dodaj poseban pregled „Novac kod kurira“.
+
+Razlikuj:
+
+- Paket poslat.
+- Paket uručen.
+- Pouzeće naplaćeno od kupca.
+- Pouzeće još nije prosleđeno prodavcu.
+- Pouzeće prosleđeno prodavcu.
+- Kurirska naknada.
+- Stvarno primljeni iznos.
+
+Omogući:
+
+- Ručno označavanje primljene uplate.
+- Datum prijema novca.
+- Grupno evidentiranje više pouzeća.
+- Usklađivanje sa kurirskim izveštajem.
+- Evidenciju razlike između očekivanog i primljenog iznosa.
+
+Vlasnik u svakom trenutku mora znati koliko novca očekuje od kurirske službe.
+
+Status uručenja ne sme automatski značiti da je novac stigao na račun prodavca.
+
+## 22. NAPREDNA STATISTIKA PRODAJE
+
+Dodaj filtere po danu, nedelji, mesecu, godini i prilagođenom periodu.
+
+Prikaži:
+
+- Broj porudžbina.
+- Broj prodatih komada.
+- Realizovan promet.
+- Procenjenu zaradu.
+- Prosečnu vrednost porudžbine.
+- Prosečan broj artikala po porudžbini.
+- Najprodavanije artikle.
+- Najprodavanije brendove.
+- Najprodavanije kategorije.
+- Najtraženije veličine.
+- Artikle koji se slabo prodaju.
+- Prodaju po izvoru porudžbine.
+- Procenat otkazanih porudžbina.
+- Procenat nepreuzetih paketa.
+- Procenat vraćene robe.
+- Trošak reklame po realizovanoj porudžbini, ako su podaci dostupni.
+
+Dodaj pregled:
+
+- Koliko je robe ostalo na stanju.
+- Koliko novca je uloženo u preostalu robu.
+- Kolika je potencijalna vrednost preostalih zaliha.
+- Koliki je procenat rasprodatih zaliha.
+
+Grafikoni moraju koristiti stvarne podatke.
+
+## 23. PROFESIONALNI MOBILNI ADMIN PANEL
+
+Zadrži jednostavnost postojećeg panela.
+
+Glavni kontrolni centar treba da prikazuje:
+
+- Današnji promet.
+- Današnju realizovanu prodaju.
+- Procenjenu zaradu.
+- Nove porudžbine.
+- Pakete za pripremu.
+- Pakete za slanje.
+- Novac kod kurira.
+- Nepreuzete pakete.
+- Aktivne artikle.
+- Ukupnu količinu robe.
+- Artikle sa niskim zalihama.
+
+Glavno istaknuto dugme:
+
+„Fotografiši i dodaj artikal“.
+
+Glavni moduli:
+
+- Kontrolni centar.
+- Artikli.
+- Zalihe.
+- Porudžbine.
+- Kupci.
+- Rasprodaja.
+- Dostava.
+- Finansije.
+- Statistika.
+- Marketing.
+- Podešavanja.
+
+Na mobilnom koristi preglednu donju navigaciju za najčešće akcije, a ostale funkcije smesti u meni Više.
+
+Administrator treba da može da vodi kompletno poslovanje bez računara.
+
+## 24. CENTRALNA PODEŠAVANJA PRODAVNICE
+
+Omogući vlasniku da bez izmene koda uređuje:
+
+- Naziv prodavnice.
+- Logo.
+- Kontakt telefon.
+- Viber kontakt.
+- Email.
+- Instagram i Facebook linkove.
+- Promotivnu traku.
+- Hero baner.
+- Glavne fotografije.
+- Tekstove naslovne strane.
+- Kategorije.
+- Način sortiranja proizvoda.
+- Cene dostave.
+- Paket popuste.
+- Prag besplatne dostave.
+- Radno vreme.
+- Uslove kupovine.
+- Politiku privatnosti.
+- Uslove povraćaja i reklamacije.
+- FAQ.
+- Podatke o prodavcu.
+
+Dodaj mogućnost prikazivanja obaveštenja kupcima.
+
+Primer: „Porudžbine primljene tokom vikenda šaljemo u ponedeljak.“
+
+Sve izmene moraju biti serverski sačuvane.
+
+## 25. FACEBOOK I INSTAGRAM MARKETING
+
+Dodaj admin modul Marketing.
+
+Za svaki artikal omogući:
+
+- Kopiranje direktnog linka.
+- Generisanje marketinškog opisa.
+- Pripremu Facebook objave.
+- Pripremu Instagram opisa.
+- Generisanje teksta za Story.
+- Pripremu slike artikla sa cenom i popustom.
+
+Dodaj mogućnost generisanja promotivnog kolaža od više odabranih artikala.
+
+Formati:
+
+- 1080 × 1080.
+- 1080 × 1350.
+- 1080 × 1920.
+
+Na promotivnom materijalu prikaži:
+
+- Fotografije stvarnih artikala.
+- Logo ATELIER OUTLET.
+- Stvarnu outlet cenu.
+- Stvarni popust.
+- Poziv na kupovinu.
+- Link ili oznaku prodavnice.
+
+Ne menjaj AI generisanjem izgled stvarnog artikla tako da kupac dobije drugačiju predstavu o robi.
+
+Omogući preuzimanje pripremljenih materijala.
+
+Automatsko objavljivanje na društvenim mrežama implementiraj samo ako postoje zvanične integracije i dozvole vlasnika.
+
+## 26. META PIXEL I MERENJE KONVERZIJA
+
+Dodaj opcionu konfiguraciju za:
+
+- Meta Pixel.
+- Google Analytics 4.
+- Google Search Console.
+- Google Merchant Center, ako prodavnica ispunjava uslove.
+
+Podrži relevantne događaje:
+
+- Pregled artikla.
+- Dodavanje u korpu.
+- Početak kupovine.
+- Uspešno kreiranje porudžbine.
+
+Obezbedi da se događaj porudžbine ne šalje više puta za isti ID.
+
+Razlikuj kreiranu porudžbinu od stvarno realizovane prodaje.
+
+Poštuj potrebne saglasnosti i pravila privatnosti.
+
+Ne aktiviraj marketinško praćenje koje zahteva saglasnost pre nego što je korisnik odobri.
+
+Ne šalji nepotrebne lične podatke kupaca eksternim servisima.
+
+## 27. SEO — GOOGLE PRETRAGA
+
+Optimizuj prodavnicu za organsku pretragu.
+
+Obavezno:
+
+- Jedinstveni SEO naslov za svaki artikal.
+- Jedinstveni meta description.
+- SEO optimizovane URL adrese.
+- Canonical URL.
+- Sitemap.xml.
+- Robots.txt.
+- Open Graph fotografije i opisi.
+- Ispravan prikaz linkova pri deljenju na društvenim mrežama.
+- Alt tekstovi fotografija.
+- Strukturirani Product podaci.
+- Strukturirani Offer podaci.
+- Breadcrumb podaci.
+- Podaci o prodavcu.
+- Ispravan prikaz cene, valute i dostupnosti.
+
+Obezbedi da Google može da učita stvarni sadržaj artikla, upotrebom SSR-a, prerenderinga ili drugog pouzdanog rešenja koje postojeća arhitektura podržava.
+
+Ne migriraj kompletnu aplikaciju na drugi framework samo zbog SEO-a bez opravdanog razloga.
+
+Spreči indeksiranje admin panela, privatnih porudžbina i stranica sa ličnim podacima.
+
+Kod filtera spreči nekontrolisano indeksiranje hiljada dupliranih URL kombinacija.
+
+Ne dodaj lažne AggregateRating podatke.
+
+## 28. RECENZIJE I POVERENJE KUPACA
+
+Zadrži svih 27 postojećih recenzija ako su stvarne i autentične.
+
+Proveri tvrdnju „4.9/5 — 420+ recenzija“.
+
+Ako broj i ocena nisu potkrepljeni stvarnim izvorom, prikaži isključivo potvrđene podatke.
+
+Dodaj mogućnost novih recenzija nakon realizovane kupovine.
+
+Administrator može moderirati neprikladan sadržaj, ali ne sme izmišljati recenzije ili proizvoljno menjati ocenu kupca.
+
+Dodaj diskretne, istinite informacije o poverenju:
+
+- Plaćanje pouzećem.
+- Dostava širom Srbije, ako je stvarno dostupna.
+- Pregledne informacije o povraćaju.
+- Kontakt prodavnice.
+- Transparentne cene.
+- Stvarne fotografije artikala.
+
+Ne koristi lažne odbrojavače, lažne brojeve posetilaca ili izmišljena obaveštenja o kupovini.
+
+Oznaku „Poslednji komad“ prikazuj samo kada je stvarno preostao jedan raspoloživ komad.
+
+## 29. ZAKONSKE INFORMACIJE I USLOVI KUPOVINE
+
+Dodaj zasebne uređive stranice:
+
+- O nama.
+- Kontakt.
+- Uslovi kupovine.
+- Politika privatnosti.
+- Dostava i plaćanje.
+- Reklamacije.
+- Povraćaj robe.
+- Odustanak od kupovine, kada je primenljivo.
+
+Omogući unos stvarnih poslovnih podataka prodavca.
+
+Ne izmišljaj poslovno ime, PIB, matični broj, adresu ili druge pravne podatke.
+
+Tekstovi moraju odgovarati stvarnom poslovnom modelu i važećim propisima Republike Srbije.
+
+Ako relevantni podaci ili pravno potvrđeni tekstovi nisu dostupni, označi ih administratoru kao stavke koje treba popuniti pre javnog pokretanja prodavnice.
+
+Rasprodaja zaliha ne sme automatski ukidati zakonska prava kupaca.
+
+## 30. OBAVEŠTENJA I AUTOMATIZACIJE
+
+Dodaj internu listu obaveštenja administratoru:
+
+- Nova porudžbina.
+- Niska zaliha.
+- Rasprodat artikal.
+- Porudžbina koja dugo čeka potvrdu.
+- Paket koji dugo nije poslat.
+- Povraćaj artikla.
+- Očekivano pouzeće.
+- Neusklađeno pouzeće.
+- Artikal koji dugo nije prodat.
+
+Omogući dnevni rezime prodaje i mesečni finansijski izveštaj.
+
+Ako postoje tehnički uslovi, dodaj opcione email ili push notifikacije.
+
+Ne uvodi plaćene SMS servise bez saglasnosti vlasnika.
+
+## 31. IZVOZ, UVOZ I REZERVNE KOPIJE
+
+Omogući admin izvoz:
+
+- Artikala.
+- Varijanti.
+- Zaliha.
+- Porudžbina.
+- Kupaca.
+- Finansija.
+- Kurirskih podataka.
+
+Podrži CSV i Excel, kao i PDF izveštaje ako platforma to pouzdano omogućava.
+
+Omogući masovni uvoz artikala iz CSV/Excel fajla.
+
+Pre uvoza obavezno prikaži pregled, greške i moguće duplikate.
+
+Ne prepisuj postojeće artikle bez potvrde.
+
+Dodaj rezervnu kopiju podataka i dokumentovan postupak oporavka.
+
+Ako platforma omogućava automatske backup-e, koristi ih uz jasno definisano čuvanje i zaštitu pristupa.
+
+## 32. MOBILNA OPTIMIZACIJA I PERFORMANSE
+
+Zadrži postojeći mobilno-prvi dizajn.
+
+Testiraj širine:
+
+- 320 px.
+- 360 px.
+- 390 px.
+- 430 px.
+- 768 px.
+- 1024 px.
+- 1440 px.
+
+Obavezno:
+
+- Bez horizontalnog prelivanja.
+- Bez preklapanja oznaka i dugmadi.
+- Bez nepotrebno velikih slika.
+- Optimizovani formati fotografija.
+- Lazy loading.
+- Stabilne dimenzije slika.
+- Brza pretraga.
+- Brzo učitavanje kataloga.
+- Paginacija.
+- Jasni loading prikazi.
+- Pravilna obrada grešaka.
+- Pristupačni kontrasti.
+- Velike dodirne površine.
+- Podrška tastaturi i čitačima ekrana.
+
+Ako je tehnički moguće, omogući instaliranje admin panela kao PWA aplikacije na telefon.
+
+Ne dozvoli offline potvrđivanje prodaje bez ponovne serverske provere zaliha.
+
+## 33. DODATNE PRODAJNE FUNKCIJE
+
+Implementiraj ako ne narušavaju jednostavnost i performanse:
+
+- Lista omiljenih artikala bez registracije.
+- Nedavno pregledani artikli.
+- Povezani proizvodi.
+- Preporuke na osnovu stvarne kategorije i dostupnosti.
+- Deljenje korpe.
+- Opcioni kuponi.
+- Poklon pakovanje.
+- Lično preuzimanje, ako ga prodavnica nudi.
+- Obaveštenje o ponovnoj dostupnosti artikla uz saglasnost.
+- Pregled artikala dostupnih u kupčevoj veličini.
+- Obaveštenje koliko nedostaje do stvarne besplatne dostave.
+
+Nemoj opterećivati kupca nepotrebnim popup prozorima.
+
+Nemoj zahtevati registraciju, newsletter ili ostavljanje email adrese da bi kupac mogao da poruči.
+
+## 34. OBAVEZNO AUTOMATIZOVANO TESTIRANJE
+
+Zadrži svih postojećih 10 jediničnih testova i proširi ih.
+
+Testiraj sledeće scenarije u izolovanoj testnoj bazi.
+
+### Test 1 — poslednji komad
+
+Dva kupca istovremeno pokušaju da kupe poslednji komad iste varijante.
+
+Očekivano: samo jedna porudžbina uspeva, a stanje nikada nije negativno.
+
+### Test 2 — korpa
+
+Kupac dodaje tri različita artikla sa različitim veličinama.
+
+Proveri količine, cene, zalihe, popuste i konačan iznos.
+
+### Test 3 — popusti
+
+Proveri jedan, dva i tri komada, kupone i pravila kombinovanja akcija.
+
+Proveri dostavu neposredno ispod praga, na tačno 4.000 RSD i iznad praga.
+
+### Test 4 — dupla porudžbina
+
+Simuliraj dvostruki klik na dugme Poruči.
+
+Očekivano: samo jedna porudžbina i jedno umanjenje ili rezervacija zaliha.
+
+### Test 5 — otkazivanje
+
+Kreiraj probnu porudžbinu i otkaži je pre slanja.
+
+Proveri vraćanje odgovarajuće količine tačno jednom.
+
+### Test 6 — povraćaj robe
+
+Proveri potpun i delimičan povraćaj.
+
+Oštećena roba ne sme postati automatski dostupna za novu prodaju.
+
+### Test 7 — cena i profit
+
+Nabavna cena: 900 RSD.
+
+Prodajna cena: 2.490 RSD.
+
+Stvarni trošak dostave: 450 RSD.
+
+Ambalaža: 50 RSD.
+
+Ako prodavac u potpunosti snosi dostavu, očekivani rezultat nakon ovih direktnih troškova je 1.090 RSD, pre poreza i ostalih rashoda.
+
+Ako kupac dodatno plaća dostavu od 450 RSD, rezultat nakon navedenih direktnih troškova je 1.540 RSD.
+
+### Test 8 — pouzeće
+
+Proveri da paket može biti uručen, a novac još nije prosleđen prodavcu.
+
+Proveri evidentiranje primljenog pouzeća bez dupliranja prihoda.
+
+### Test 9 — admin bezbednost
+
+Pokušaj neovlašćen pristup admin API rutama.
+
+Pokušaj pristup privatnoj porudžbini promenom ID-a.
+
+Pokušaj promenu zaliha bez administrativne autorizacije.
+
+Sve mora biti odbijeno.
+
+### Test 10 — privatnost kupaca
+
+Proveri da javno praćenje porudžbine ne otkriva tuđe lične podatke.
+
+### Test 11 — mobilni admin
+
+Fotografiši i dodaj probni artikal sa više veličina.
+
+Izmeni cenu i količinu.
+
+Proveri čuvanje nakon osvežavanja stranice.
+
+### Test 12 — ručna porudžbina
+
+Dodaj probnu porudžbinu iz admin panela sa izvorom Viber.
+
+Proveri da se koriste iste zalihe i finansijska logika kao na sajtu.
+
+### Test 13 — SEO
+
+Proveri sitemap, canonical URL, Product strukturirane podatke i prikaz sadržaja bez oslanjanja samo na naknadno klijentsko učitavanje.
+
+### Test 14 — izvoz
+
+Generiši testni CSV/Excel.
+
+Proveri datume, količine, cene i srpska slova.
+
+### Test 15 — očuvanje postojećih podataka
+
+Proveri da nakon svih migracija postojeći artikli, fotografije, transakcije, zalihe i porudžbine ostaju ispravni.
+
+Ponovo pokreni postojeći build, TypeScript proveru i sve testove.
+
+Izvrši kompletnu proveru u Headless Chromium-u na mobilnoj i desktop rezoluciji.
+
+Ne označavaj test uspešnim ako nije stvarno izvršen.
+
+## 35. REDOSLED IMPLEMENTACIJE
+
+FAZA 1 — kompletna revizija, backup i serverska bezbednost.
+
+FAZA 2 — zalihe, konkurentne kupovine, porudžbine, otkazivanje i povraćaji.
+
+FAZA 3 — napredni artikli, varijante, korpa, paket popusti i brzi unos robe.
+
+FAZA 4 — mobilni admin, ručne porudžbine, kupci i dostava.
+
+FAZA 5 — finansije, nabavne cene, profit i kurirska pouzeća.
+
+FAZA 6 — rasprodaja zaliha, promocije, marketing i statistika.
+
+FAZA 7 — SEO, deljenje artikala i integracije.
+
+FAZA 8 — privatnost, zakonske stranice, rezervne kopije i izvoz.
+
+FAZA 9 — optimizacija performansi i kompletno testiranje.
+
+Posle svake faze ponovo testiraj postojeće funkcionalnosti.
+
+Nemoj prelaziti na vizuelne nadogradnje dok postoje kritični problemi sa zalihama, bezbednošću ili porudžbinama.
+
+## 36. ZAVRŠNI IZVEŠTAJ
+
+Nakon implementacije dostavi:
+
+1. Pregled postojećeg stanja.
+2. Pronađene greške.
+3. Popravljene greške.
+4. Funkcionalnosti koje su ostavljene nepromenjene.
+5. Nove implementirane funkcionalnosti.
+6. Promene u bazi podataka.
+7. Promene serverskih funkcija.
+8. Sve izvršene testove.
+9. Očekivane i stvarne rezultate testova.
+10. Bezbednosne provere.
+11. Rezultate build-a i provere tipova.
+12. Eventualna ograničenja platforme.
+13. Nedostajuće podatke i pristupne ključeve.
+14. Stavke koje zahtevaju potvrdu vlasnika.
+15. Procenu spremnosti za javno pokretanje.
+
+Za svaku funkciju koristi status:
+
+- POSTOJEĆE — ISPRAVNO, NIJE MENJANO.
+- NOVO IMPLEMENTIRANO I TESTIRANO.
+- POPRAVLJENO I TESTIRANO.
+- DELIMIČNO IMPLEMENTIRANO.
+- NIJE TESTIRANO.
+- ČEKA KONFIGURACIJU VLASNIKA.
+- TEHNIČKI BLOKIRANO.
+
+## KRAJNJI CILJ
+
+ATELIER OUTLET mora izgledati kao moderna, luksuzna modna internet prodavnica, a u pozadini funkcionisati kao ozbiljan sistem za upravljanje trgovinom.
+
+Kupac mora moći jednostavno da pronađe odgovarajuću garderobu, izabere veličinu i poruči bez registracije.
+
+Vlasnik mora moći preko telefona da:
+
+- Fotografише i objavi robu.
+- Vodi zalihe.
+- Menja cene.
+- Pokreće rasprodaje.
+- Prima porudžbine.
+- Unosi porudžbine sa društvenih mreža.
+- Priprema pakete.
+- Prati dostavu.
+- Vodi kupce.
+- Kontroliše novac kod kurirskih službi.
+- Zna stvarnu nabavnu vrednost robe.
+- Zna koliko je robe prodao.
+- Zna koliko je novca primio.
+- Zna koliko je zaradio.
+- Zna koliko robe još treba da rasproda.
+- Priprema marketinške materijale.
+
+Najvažnije: sačuvaj sve što već radi, popravi ono što nije ispravno i implementiraj nove funkcionalnosti bez nepotrebnog komplikovanja aplikacije.
+
+Započni revizijom postojeće implementacije i nastavi izvršavanje prema definisanim fazama.
